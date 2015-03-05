@@ -1,3 +1,47 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	background: #f3f3f3;
+}
+.carousel-control{ 	opacity: 0; }
+.carousel-control:hover{ 	opacity: 0; }
+
+a.carousel-control:focus{ 	opacity: 0; }
+
+.car-text-right{
+	text-align: right;
+}
+.car-home{
+	height: 90%;
+}
+.car-image{
+	width: 100%;
+}
+.aliados-img{
+	display: inline-block;
+}
+.cl-blue{
+	background: #64bbe8;
+	color: #ffffff;
+	border-top: 13px solid #51acd0;
+	border-bottom: 13px solid #f3f3f3;
+}
+.cl-black{
+	background: #151515;
+	color: #ffffff;
+	border-top: 13px solid #000000;
+	border-bottom: 13px solid #f3f3f3; 
+}
+.cl-white{
+	background: #ffffff;
+}
+.text-title h1{
+	font-size: 40px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+.cont-blue, .cont-black{
+	height: 278px;
+	padding-bottom: 45px;
+}
