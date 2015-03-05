@@ -1,0 +1,98 @@
+<section id="carousel">
+	<div id="carousel-home-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators car-text-right">
+			<li data-target="#carousel-home-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-home-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-home-generic" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<%= image_tag('image1.jpg', :class => "car-image") %>
+			</div>
+			<div class="item">
+				<%= image_tag('image1.jpg', :class => "car-image") %>
+			</div>
+			<div class="item">
+				<%= image_tag('image1.jpg', :class => "car-image") %>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel-home-generic" role="button" data-slide="prev"></a>
+		<a class="right carousel-control" href="#carousel-home-generic" role="button" data-slide="next"></a>
+	</div>
+</section>
+<section id="quienes-somos">
+	<div class="row">
+		<div class=" col-md-8 cl-blue cont-blue">
+			<div class="col-md-2 hidden-sm"></div>
+			<div class="col-md-5">
+				<div class="text-title">
+					<h1>Quienes somos</h1>
+				</div>
+				<div class="text-justify">
+					<p>
+						La Asociación Jóvenes Empresarios de Venezuela es una iniciativa de empresarios para nuevos prendedores, cual recoge entre sus miembros a jóvenes entre dieciocho y cuarenta años con empresas o proyectos de esa ubicados en el territorio venezolano. 	
+					</p>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="text-title">
+					<h1>Pilares</h1>
+				</div>
+				<div class="text-justify">
+					<p>
+						La Asociación Jóvenes Empresarios de Venezuela es una iniciativa de empresarios para nuevos prendedores, cual recoge entre sus miembros a jóvenes entre dieciocho y cuarenta.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class=" col-md-4 cl-black cont-black">
+			<div class="col-md-12">
+				<div class="text-title">
+					<h1>Que soñamos</h1>
+				</div>
+				<div class="text-justify">
+					<p>
+						Ser la institución líder en la promoción y desarrollo del espíritu emprendedor de los jóvenes empresarios de Venezuela, proveyéndolos de conocimientos y de valiosas experiencias.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="aliados">
+	<div id="carousel-example-generic" class="carousel slide cl-white" data-ride="carousel">
+		<div class="container text-center">
+			<div class="carousel-inner car-aliados" role="listbox">
+				<div class="item active">
+					<%= image_tag('aliados.jpg', :class => "car-image") %>
+				</div>
+				<div class="item">
+					<%= image_tag('aliados.jpg', :class => "car-image") %>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+		</div>
+	</div>
+</section>
+<section id="red-social">
+	<div class="container text-center">
+		<div class="text-center">
+			<h1>Redes Sociales</h1>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-4">
+				<%= image_tag('social-twitter.png', :class => "") %>
+			</div>
+			<div class="col-md-4">
+				<%= image_tag('social-facebook.png', :class => "") %>
+			</div>
+			<div class="col-md-4">
+				<%= image_tag('social-instagram.png', :class => "") %>
+			</div>
+		</div>
+	</div>
+</section>
