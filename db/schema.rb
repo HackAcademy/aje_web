@@ -11,6 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150306004744) do
+
+  create_table "afiliates", force: :cascade do |t|
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "ci",         default: "", null: false
+    t.string   "email",      default: "", null: false
+    t.string   "phone"
+    t.string   "business"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  add_index "afiliates", ["ci"], name: "index_afiliates_on_ci", unique: true
+  add_index "afiliates", ["email"], name: "index_afiliates_on_email", unique: true
 
 end
