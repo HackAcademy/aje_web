@@ -8,21 +8,21 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="formu">
-					<form>
-						<label>Nombre</label>
-						<input type="text"></input>		
-						<label>Apellido</label>
-						<input type="text"></input>		
-						<label>Cédula de identidad</label>
-						<input type="text"></input>		
-						<label>Teléfono</label>
-						<input type="text"></input>		
-						<label>Email</label>
-						<input type="text"></input>		
-						<label>Empresa</label>
-						<input type="text"></input>
-						<input type="button" value="ENVIAR"></input>								
-					</form>	
+					<%= simple_form_for @afiliate do |f| %>
+						<%= f.label :Nombre %>
+						<%= f.input :name, label: false, :required => true %>
+						<%= f.label :Apellido %>
+						<%= f.input :lastname, label: false, :required => true %>
+						<%= f.label :Cedula_de_identidad %>
+						<%= f.input :ci, label: false, :required => true %>
+						<%= f.label :Telefono %>
+						<%= f.input :phone, label: false, :required => true %>
+						<%= f.label :Email %>
+						<%= f.input :email, label: false, :required => true %>
+						<%= f.label :Empresa %>
+						<%= f.input :business, label: false, :required => true %>
+						<%= f.button :submit, 'ENVIAR' %>
+					<% end %>
 				</div>
 			</div>
 		</div>
