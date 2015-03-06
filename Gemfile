@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'mail_form'
+gem 'simple_form'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
