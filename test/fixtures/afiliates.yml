@@ -3,17 +3,17 @@
 one:
   name: MyString
   lastname: MyString
-  CI: 
-  unique: 
+  ci: MyString
   email: MyString
   phone: MyString
   business: MyString
+  email: 
 
 two:
   name: MyString
   lastname: MyString
-  CI: 
-  unique: 
+  ci: MyString
   email: MyString
   phone: MyString
   business: MyString
+  email: 
