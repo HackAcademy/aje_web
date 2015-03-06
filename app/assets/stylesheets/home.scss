@@ -15,8 +15,8 @@ a, a:hover, a:focus, a:visited{
 	}
 }
 .carousel-indicators{
-	right: 15%;
-	left: 65%;
+	left: 90% !important;
+	margin-left: 0;
 }
 .carousel-indicators li{
 	background: white;
@@ -39,15 +39,18 @@ a, a:hover, a:focus, a:visited{
 a.carousel-control:focus{ 	opacity: 0; }
 
 .car-text-right{
-	text-align: right;
+	text-align: right !important;
 }
 .container-car{
 	position: absolute;
 	margin-bottom: 140px;
 }
+.container-car h1{
+	color: #666666 !important;
+}
 @media (min-width:350px ) {
 	.container-car{
-		margin-top: -220px;
+		margin-top: -300px;
 		margin-left: 20px;
 	}	
 }
@@ -179,16 +182,20 @@ a.btn-afiliate{
 	}
 }
 .car-image{
+	width: 100% !important;
+}
+.car-image2{
 	width: 100%;
+	height: 100% !important;
 }
 @media (min-width: 992px){
 	.car-image{
-		height: 490px;
+		height: 490px !important;
 	}
 }
 @media (min-width: 1200px){
 	.car-image{
-		height: 660px;
+		height: 660px !important;
 	}
 }
 .margin-side{
@@ -229,39 +236,39 @@ a.btn-afiliate{
 @media (min-width: 768px){
 	.cont-blue{
 		height: auto;
-		
+
 	}
 }
 @media (min-width: 992px){
 	.cont-blue{
 		height: 413px;
-		
+
 	}
 
 }
 @media (min-width: 1200px){
 	.cont-blue{
 		height: 365px;
-		
+
 	}
 }
 @media (min-width: 768px){
 	.cont-black{
 		height: auto;
-		
+
 	}
 }
 @media (min-width: 992px){
 	.cont-black{
 		height: 413px;
-		
+
 	}
 
 }
 @media (min-width: 1200px){
 	.cont-black{
 		height: 365px;
-		
+
 	}
 }
 .text-title h1{
