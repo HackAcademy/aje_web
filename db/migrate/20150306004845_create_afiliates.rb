@@ -3,8 +3,7 @@ class CreateAfiliates < ActiveRecord::Migration
     create_table :afiliates do |t|
       t.string :name
       t.string :lastname
-      t.string, :CI
-      t.true :unique
+      t.string :CI
       t.string :email
       t.string :phone
       t.string :business

@@ -1,0 +1,35 @@
+<%= form_for (@afiliate.new) do |afiliate| %>
+  <p>
+    <%= afiliate.label :Nombre %><br>
+    <%= afiliate.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= afiliate.label :Apellido %><br>
+    <%= afiliate.text_field :lastname %>
+  </p>
+
+  <p>
+    <%= afiliate.label :Cedula %><br>
+    <%= afiliate.text_field :CI %>
+  </p>
+
+  <p>
+    <%= afiliate.label :Telefono %><br>
+    <%= afiliate.text_field :phone %>
+  </p>
+
+  <p>
+    <%= afiliate.label :Email %><br>
+    <%= afiliate.text_field :email %>
+  </p>
+
+  <p>
+    <%= afiliate.label :Empresa %><br>
+    <%= afiliate.text_field :business %>
+  </p>
+ 
+  <p>
+    <%= afiliate.submit %>
+  </p>
+<% end %>
