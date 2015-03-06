@@ -1,8 +1,4 @@
 class AfiliatesController < ApplicationController
-  def new
-    @afiliate = Afiliate.new
-  end
-
 	def create
   	@afiliate = Afiliate.new(afiliate_params)
     	if @afiliate.save
