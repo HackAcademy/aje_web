@@ -1,4 +1,5 @@
 Rails.application.configure do
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000}
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -39,4 +40,22 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+<<<<<<< HEAD
+=======
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    domain: 'localhost:3000',
+    port: 587,
+    authentication: 'plain',
+    enable_starttls_auto: true,
+    user_name: "ajehack@gmail.com",
+    password: "delunoalseis"
+  }
+  # ActionMailer Config
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  # Send email in development mode.
+  config.action_mailer.perform_deliveries = true
+>>>>>>> 2beac4d319cbf70cdb0dfbb2b831a50430e1df46
 end
