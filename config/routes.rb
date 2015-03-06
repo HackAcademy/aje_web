@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,6 +8,7 @@ Rails.application.routes.draw do
    root 'home#index'
    get 'contact', to: 'home#contact'
    get 'afiliate', to: 'home#afiliate'
+   resources "contacts", only: [:new, :create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
