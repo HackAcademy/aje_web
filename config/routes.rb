@@ -8,7 +8,7 @@ Rails.application.routes.draw do
    root 'home#index'
    get 'contact', to: 'home#contact'
    get 'afiliate', to: 'home#afiliate'
-   resources "contact", :only [:new, :create]
+   resources "contacts", only: [:new, :create]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

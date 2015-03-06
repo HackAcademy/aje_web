@@ -1,6 +1,11 @@
-<%= form_for @contact do |f| %>
+<%= simple_form_for @contact do |f| %>
+	<%= f.label :Nombre %>
 	<%= f.input :name, label: false, :required => false %>
+	<%= f.label :Email %>
 	<%= f.input :email, label: false, :required => false %>
+	<%= f.label :Asunto %>
+	<%= f.input :subject, label: false, :required => false %>
+	<%= f.label :Mensaje %>
 	<%= f.input :message, label: false, :as => :text, :required => false %>
-	<%= f.button :submit, 'Send message' %>
+	<%= f.button :submit, 'ENVIAR' %>
 <% end %>
