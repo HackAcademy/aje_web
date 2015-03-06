@@ -55,6 +55,13 @@ li{
 	background-color: #E5E5E5;
 	height: 15px;
 }
+
+.thin-box3{
+	width: 100%;
+	background-color: #d8d8d8;
+	height: 15px;
+}
+
 .menu-select{
 	background-color: #64BBE8;
 	width: 100%;
@@ -90,5 +97,44 @@ li{
 	border: none;
 	width: 200px;
 	height:20px;
+	margin-left: 480px;
+
 }
 
+.enviar-button{
+	background-color: #151515;
+	width: 450px;
+	height: 50px;
+	display: table;
+}
+
+.enviar-button-inner{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.enviar-button-inner p{
+	color: #64BBE8;
+}
+
+.social-segment{
+	background-color: #e4e4e4;
+	width: 100%;
+	height: 200px;
+	display: table;
+
+}
+.social-segment-inner{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.social-box{
+	float: left;
+	margin: auto 100px;
+}
+
+.social-box p{
+	color: #64BBE8;
+}

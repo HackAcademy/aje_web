@@ -11,9 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150306004845) do
-=======
 ActiveRecord::Schema.define(version: 20150306005443) do
 
   create_table "active_admin_comments", force: :cascade do |t|
@@ -48,21 +45,10 @@ ActiveRecord::Schema.define(version: 20150306005443) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
->>>>>>> 87c75220ef58f196dda3658bf026c7e2fe8aa75d
 
   create_table "afiliates", force: :cascade do |t|
     t.string   "name"
     t.string   "lastname"
-<<<<<<< HEAD
-    t.string   "CI"
-    t.string   "email"
-    t.string   "phone"
-    t.string   "business"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-=======
     t.string   "ci",         default: "", null: false
     t.string   "email",      default: "", null: false
     t.string   "phone"
@@ -74,5 +60,4 @@ ActiveRecord::Schema.define(version: 20150306005443) do
   add_index "afiliates", ["ci"], name: "index_afiliates_on_ci", unique: true
   add_index "afiliates", ["email"], name: "index_afiliates_on_email", unique: true
 
->>>>>>> 87c75220ef58f196dda3658bf026c7e2fe8aa75d
 end

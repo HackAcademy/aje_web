@@ -13,22 +13,6 @@
 
 </head>
 <body>
-
-	<nav class= "navbar navbar-default" style="background-color: #fff;">
-		<div class="logo">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<%= image_tag('logo2.png') %>
-		</div>
-		<div class="menu-texto">
-			<ul>
-				<li><a href="#">Quienes somos</a></li>
-				<li><a href="#">Código de honor</a></li>
-				<li><a href="#">Eventos</a></li>
-				<li><a href="#">Afiliación</a></li>
-				<li><a href="#">Contácto</a></li>
-			</ul>
-		</div>
-	</nav>
 	<div class="thin-box"></div>
 	<div class="menu-select">
 		<div class="menu-select-inner">
@@ -40,31 +24,63 @@
 	<div class="registration-form">
 		<div class="registration-form-inner">
 			<div class="registration-label">
-				<p>Nombre</p>
+				<p style="
+				margin-right: 400px;">Nombre</p>
 				<div class="input group">
-					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 50px; border: none;">
+					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 50px; border: none;margin-left:480px;">
 				</div>
 			</div>
 			<div class="registration-label">
-				<p>Email</p>
+				<p style="
+				margin-right: 400px;">Email</p>
 				<div class="input group">
-					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 50px; border: none;">
+					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 50px; border: none;margin-left:480px;">
 				</div>
 			</div>
 			<div class="registration-label">
-				<p>Asunto</p>
+				<p style="
+				margin-right: 400px;">Asunto</p>
 				<div class="input group">
-					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 50px; border: none;">
+					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 50px; border: none;margin-left:480px;">
 				</div>
 			</div>
 			<div class="registration-label">
-				<p>Mensaje</p>
+				<p style="
+				margin-right: 400px;">Mensaje</p>
 				<div class="input group">
-					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 100px; border: none;">
+					<input type="text" class="form-control" placeholder="" style="width: 450px; height: 100px; border: none; margin-left:480px;">
+				</div>
+			</div>
+			<div class="enviar-button" style="margin-left: 480px;">
+				<div class="enviar-button-inner">
+					<p>Enviar</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="thin-box3"></div>
+	<div class="social-segment">
+		<div class="social-segment-inner">
+			<div class="social-box">
+				<%= image_tag('sobre.png') %>
+				<p>info@ajevenezuela.org</p>
+			</div>
+			<div class="social-box">
+				<%= image_tag('twitter.png') %>
+				<p>@AjeVenezuela</p>
+			</div>
+			<div class="social-box">
+				<%= image_tag('instagram.png') %>
+				<p>@Ajevenezuela</p>
+			</div>
+			<div class="social-box">
+				<%= image_tag('facebook.png') %>
+				<p>/AjeVenezuela</p>
+			</div>
+		</div>
+		
+	</div>
+
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -74,14 +90,14 @@
 </html>
 
 <%= simple_form_for @contact do |f| %>
-	<%= f.label :Nombre %>
-	<%= f.input :name, label: false, :required => false %>
-	<%= f.label :Email %>
-	<%= f.input :email, label: false, :required => false %>
-	<%= f.label :Asunto %>
-	<%= f.input :subject, label: false, :required => false %>
-	<%= f.label :Mensaje %>
-	<%= f.input :message, label: false, :as => :text, :required => false %>
-	<%= f.button :submit, 'ENVIAR' %>
+<%= f.label :Nombre %>
+<%= f.input :name, label: false, :required => false %>
+<%= f.label :Email %>
+<%= f.input :email, label: false, :required => false %>
+<%= f.label :Asunto %>
+<%= f.input :subject, label: false, :required => false %>
+<%= f.label :Mensaje %>
+<%= f.input :message, label: false, :as => :text, :required => false %>
+<%= f.button :submit, 'ENVIAR' %>
 <% end %>
 
