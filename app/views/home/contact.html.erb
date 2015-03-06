@@ -1,0 +1,6 @@
+<%= form_for @contact do |f| %>
+	<%= f.input :name, label: false, :required => false %>
+	<%= f.input :email, label: false, :required => false %>
+	<%= f.input :message, label: false, :as => :text, :required => false %>
+	<%= f.button :submit, 'Send message' %>
+<% end %>
