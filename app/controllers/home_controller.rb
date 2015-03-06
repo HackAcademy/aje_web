@@ -8,6 +8,9 @@ class HomeController < ApplicationController
   	def new
     	@contact = Contact.new
   	end
+  	def afiliate
+    	@afiliate = Afiliate.new
+  	end
 
   	def create
     	ContactsController

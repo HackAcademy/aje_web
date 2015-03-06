@@ -1,21 +1,19 @@
 class AfiliatesController < ApplicationController
-	def index
-  		@afiliate = Afiliate.all
-	end
+  def new
+    @afiliate = Afiliate.new
+  end
 
 	def create
-		@afiliate = Afiliate.all
-	  	@afiliate = Afiliate.new(afiliate_params)
- 
-  		if @afiliate.save
-    		redirect_to action: "index"
-  		else
+  	@afiliate = Afiliate.new(afiliate_params)
+    	if @afiliate.save
+    		redirect_to afiliate_path
+    	else
     		render 'index'
-  		end
+    	end
 	end
  
 	private
-  		def afiliate_params
-    		params.require(:afiliate).permit(:name, :lastname, :CI, :phone, :email, :business)
-  		end
+		def afiliate_params
+  		params.require(:afiliate).permit(:name, :lastname, :ci, :phone, :email, :business)
+		end
 end
