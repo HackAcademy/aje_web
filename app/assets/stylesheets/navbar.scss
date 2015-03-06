@@ -1,0 +1,46 @@
+body{
+	font-size: 16px;
+}
+
+h1{
+	color: blue
+}
+.logo {
+	float: left;
+	margin-right: 300px;
+}
+.navbar{
+	height: 90px;
+	background-color: #FFF;
+}
+
+.navbar img{
+	vertical-align: middle;
+	margin: 10px auto auto 120px;
+	float: left;
+}
+
+.menu-texto ul{
+	list-style-type: none;
+	margin-top: 30px;
+}
+
+.menu-texto ul li a{
+	color: #737373;
+	text-decoration: none;
+
+}
+
+.menu-texto ul li a:link:active{
+	color: #68C3F2;
+}
+
+.menu-texto ul li a:hover{
+	color: #64BBE8;
+}
+
+
+li{
+	float: left;
+	margin-right: 20px;
+}
