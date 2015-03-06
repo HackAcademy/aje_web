@@ -12,6 +12,11 @@ h1{
 .navbar{
 	height: 90px;
 	background-color: #FFF;
+	margin-bottom: 0px;
+	z-index: 10;
+	-webkit-box-shadow: 0 14px 5px 0px rgba(50, 50, 50, 0.10);
+	-moz-box-shadow:    0 14px 5px 0px rgba(50, 50, 50, 0.10);
+	box-shadow:         0 14px 5px 0px rgba(50, 50, 50, 0.10);
 }
 
 .navbar img{
