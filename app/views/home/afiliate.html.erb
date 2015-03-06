@@ -1,0 +1,30 @@
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<div class="col-md-12 banner-head">
+	Afiliate con nosotros
+</div>
+<div class="container">
+	<div class="content col-md-6 col-md-offset-3" align="center">
+		<p><strong> La Asociacion Jovenes Texto de relleno lorem ipsum para nuevos emprendedores, La cual recoge a jovenes entre dieciocho.</strong></p>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="formu">
+					<%= simple_form_for @afiliate do |f| %>
+						<%= f.label :Nombre %>
+						<%= f.input :name, label: false, :required => true %>
+						<%= f.label :Apellido %>
+						<%= f.input :lastname, label: false, :required => true %>
+						<%= f.label :Cedula_de_identidad %>
+						<%= f.input :ci, label: false, :required => true %>
+						<%= f.label :Telefono %>
+						<%= f.input :phone, label: false, :required => true %>
+						<%= f.label :Email %>
+						<%= f.input :email, label: false, :required => true %>
+						<%= f.label :Empresa %>
+						<%= f.input :business, label: false, :required => true %>
+						<%= f.button :submit, 'ENVIAR' %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
