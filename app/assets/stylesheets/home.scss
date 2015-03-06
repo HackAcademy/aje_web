@@ -1,8 +1,13 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+
 body{
 	background: #f3f3f3;
+	color: #9e9e9e;
+	font-family: 'Roboto', sans-serif;
 }
 .carousel-control{ 	opacity: 0; }
 .carousel-control:hover{ 	opacity: 0; }
@@ -18,14 +23,15 @@ a.carousel-control:focus{ 	opacity: 0; }
 .car-image{
 	width: 100%;
 }
+.margin-side{
+	margin: 0;
+}
 .aliados-img{
 	display: inline-block;
 }
 .cl-blue{
 	background: #64bbe8;
 	color: #ffffff;
-	border-top: 13px solid #51acd0;
-	border-bottom: 13px solid #f3f3f3;
 }
 .cl-black{
 	background: #151515;
@@ -33,15 +39,96 @@ a.carousel-control:focus{ 	opacity: 0; }
 	border-top: 13px solid #000000;
 	border-bottom: 13px solid #f3f3f3; 
 }
+
+@media (min-width: 768px){
+	.cl-blue{
+		border-top: 13px solid #51acd0;
+		border-bottom: 0;
+	}
+}
+@media (min-width: 992px){
+	.cl-blue{
+		border-top: 13px solid #51acd0;
+		border-bottom: 13px solid #f3f3f3;
+	}
+}
 .cl-white{
 	background: #ffffff;
+}
+.cont-blue, .cont-black{
+	padding-bottom: 45px;
+}
+@media (min-width: 768px){
+	.cont-blue{
+		height: auto;
+		
+	}
+}
+@media (min-width: 992px){
+	.cont-blue{
+		height: 413px;
+		
+	}
+
+}
+@media (min-width: 1200px){
+	.cont-blue{
+		height: 365px;
+		
+	}
+}
+@media (min-width: 768px){
+	.cont-black{
+		height: auto;
+		
+	}
+}
+@media (min-width: 992px){
+	.cont-black{
+		height: 413px;
+		
+	}
+
+}
+@media (min-width: 1200px){
+	.cont-black{
+		height: 365px;
+		
+	}
 }
 .text-title h1{
 	font-size: 40px;
 	margin-top: 45px;
 	margin-bottom: 25px;
 }
-.cont-blue, .cont-black{
-	height: 278px;
-	padding-bottom: 45px;
+.text-center h1{
+	padding-bottom: 42px;	
+}
+.cont-p p{
+	font-size: 16px;
+}
+@media (min-width: 768px){
+	.text-title h1{
+		font-size: 40px;
+	}
+	.cont-p p{
+		font-size: 20px;
+	}
+}
+@media (min-width: 992px){
+	.text-title h1{
+		font-size: 34px;
+	}
+	.cont-p p{
+		font-size: 18px;
+	}
+}
+.cont-aliados{
+	padding-top: 24px;
+}
+.cont-aliados h1{
+	margin-top: 0;
+}
+h1{
+	margin-bottom: 0;
 }
