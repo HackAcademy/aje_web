@@ -16,7 +16,7 @@ a, a:hover, a:focus, a:visited{
 }
 .carousel-indicators{
 	left: 90% !important;
-	margin-left: 0;
+	margin-left: 0
 }
 .carousel-indicators li{
 	background: white;
@@ -40,6 +40,7 @@ a.carousel-control:focus{ 	opacity: 0; }
 
 .car-text-right{
 	text-align: right !important;
+	width: 70px;
 }
 .container-car{
 	position: absolute;
