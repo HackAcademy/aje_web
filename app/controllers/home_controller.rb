@@ -15,4 +15,7 @@ class HomeController < ApplicationController
   	def create
     	ContactsController
 	end
+  def mentor
+    #aqui va el query
+  end
 end

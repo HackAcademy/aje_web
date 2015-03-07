@@ -8,6 +8,7 @@ Rails.application.routes.draw do
    root 'home#index'
    get 'contact', to: 'home#contact'
    get 'afiliate', to: 'home#afiliate'
+    get 'mentor', to: 'home#mentor'
 
    resources 'afiliates'
 

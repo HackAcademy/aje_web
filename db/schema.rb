@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150306005443) do
+ActiveRecord::Schema.define(version: 20150307013044) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -59,5 +59,19 @@ ActiveRecord::Schema.define(version: 20150306005443) do
 
   add_index "afiliates", ["ci"], name: "index_afiliates_on_ci", unique: true
   add_index "afiliates", ["email"], name: "index_afiliates_on_email", unique: true
+
+  create_table "mentors", force: :cascade do |t|
+    t.string   "name"
+    t.string   "lastname"
+    t.string   "age"
+    t.text     "description"
+    t.string   "email"
+    t.string   "business"
+    t.string   "facebook"
+    t.string   "twitter"
+    t.string   "instagram"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
 end
