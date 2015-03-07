@@ -7,6 +7,7 @@ ActiveAdmin.register Afiliate do
       column "Correo", :email
       column "Telefono", :phone
       column "Empresa", :business
+      actions
   end
   filter :name
   filter :lastname
