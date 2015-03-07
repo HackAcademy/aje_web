@@ -1,21 +1,23 @@
-<nav class= "navbar navbar-default" style="background-color: #fff;">
-	<div class="logo">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<%= image_tag('logo2.png') %>
-	</div>
-	<div class="menu-texto">
-		<ul>
-			<li>
-				<% if @home %>
+<div class="">
+	<nav class= "navbar navbar-default fixed" style="background-color: #fff;">
+		<div class="logo">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<%= image_tag('logo2.png') %>
+		</div>
+		<div class="menu-texto">
+			<ul>
+				<li>
+					<% if @home %>
 					<a href="#quienes-somos">Quienes Somos</a>
-				<% else %>
+					<% else %>
 					<%= link_to "Quienes Somos", root_path %>
-				<% end %>
-			</li>
-			<li><a href="#">Código de honor</a></li>
-			<li><a href="#">Eventos</a></li>
-			<li><%= link_to "Afiliación", afiliate_path %></li>
-			<li><%= link_to "Contácto", contact_path %></li>
-		</ul>
-	</div>
-</nav>
+					<% end %>
+				</li>
+				<li><a href="#">Código de honor</a></li>
+				<li><a href="#">Eventos</a></li>
+				<li><%= link_to "Afiliación", afiliate_path %></li>
+				<li><%= link_to "Contácto", contact_path %></li>
+			</ul>
+		</div>
+	</nav>
+</div>
