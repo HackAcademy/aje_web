@@ -1,1 +1,12 @@
-<!-- aqui va el each del query -->
+<!-- agregar estilo de bootstrap o el que sea necesario -->
+<% @mentors.each do |m| %>
+	<%= m.name %>
+	<%= m.lastname %>
+	<%= m.age %>
+	<%= m.description %>
+	<%= m.email %>
+	<%= m.business %>
+	<%= m.facebook %>
+	<%= m.twitter %>
+	<%= m.instagram %>
+<% end %>

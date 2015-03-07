@@ -5,17 +5,17 @@ class HomeController < ApplicationController
 	def contact
 		@contact = new
 	end
-  	def new
-    	@contact = Contact.new
-  	end
-  	def afiliate
-    	@afiliate = Afiliate.new
-  	end
+	def new
+  	@contact = Contact.new
+	end
+	def afiliate
+  	@afiliate = Afiliate.new
+	end
 
-  	def create
-    	ContactsController
+	def create
+  	ContactsController
 	end
   def mentor
-    #aqui va el query
+    @mentors = Mentor.all
   end
 end
