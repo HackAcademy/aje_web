@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+#niceScroll
+#gem 'nicescroll-rails', '~> 3.5.4.1'
 #carga de imagenes
 gem "paperclip", "~> 4.2"
 # Administracion
