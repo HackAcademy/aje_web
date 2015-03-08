@@ -2,12 +2,14 @@
 	width: 100%;
 	background-color: #64BBE8;
 	height: 150px;
-	box-shadow: 0 10px 0px rgba(182, 182, 182, 0.3);
+	-webkit-box-shadow: 0 12px 0px 0px rgba(182, 182, 182, 0.3);
+	-moz-box-shadow:    0 12px 0px 0px rgba(182, 182, 182, 0.3);
+	box-shadow: 0 12px 0px rgba(182, 182, 182, 0.3);
 	color: white;
 	font-size: 40px;
 	font-family: 'Roboto';
 	text-align: center;
-	padding-top: 55px;
+	padding-top: 65px;
 }
 .content{
 	margin-top: 65px;

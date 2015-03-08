@@ -1,12 +1,41 @@
 <!-- agregar estilo de bootstrap o el que sea necesario -->
-<% @mentors.each do |m| %>
-	<%= m.name %>
-	<%= m.lastname %>
-	<%= m.age %>
-	<%= m.description %>
-	<%= m.email %>
-	<%= m.business %>
-	<%= m.facebook %>
-	<%= m.twitter %>
-	<%= m.instagram %>
-<% end %>
+
+<div class="col-sm-12 banner-head">
+	Mentores
+</div>
+<div class="container">
+	<div class="inner-container">
+		<div class="row mentors-container">
+		<% @mentors.each do |m| %>
+			<div class="col-sm-3 mentor-box">
+				<div class="mentor">
+					<div class="mentorAvatar">
+					<!-- insertar la imagen de cada mentor -->
+						<%= image_tag("", class: "img-responsive avatarMentor") %>
+
+						<div class="socialHover" style="display:none;">
+							<a href="<% m.twitter %>">
+							<i class="fa fa-twitter fa-3x img-circle twitter s-hover"></i>
+							</a>
+							<a href="<%= m.facebook %>">
+							<i class="fa fa-facebook fa-3x img-circle facebook s-hover"></i>
+							</a>
+							<a href="<% m.instagram %>">
+							<i class="fa fa-instagram fa-3x img-circle instagram s-hover"></i>.
+							</a>
+						</div>
+					</div>
+					<div class="mentor-description">
+						<p class="mentor-name">
+							<%= m.name %> <%= m.lastname %>
+						</p>
+						<p>
+							<%= m.description %>
+						</p>
+					</div>
+				</div>
+			</div>
+		<% end %>
+		</div>
+	</div>
+</div>
