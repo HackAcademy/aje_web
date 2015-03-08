@@ -10,6 +10,7 @@
 	font-family: 'Roboto';
 	text-align: center;
 	padding-top: 65px;
+	margin-top: 70px;
 }
 .content{
 	margin-top: 65px;
@@ -18,9 +19,6 @@
 	text-align: center;
 	color: #8e8e8e;
 	margin-bottom: 55px;
-}
-body{
-	background-color: #f3f3f3;
 }
 input[type=text]{
 	width: 100%;
@@ -43,4 +41,7 @@ input[type=button]{
 	background-color: black;
 	color: #64BBE8;
 	text-transform: uppercase;
+}
+.margin-to-afiliate{
+	margin-top: 20px;
 }
