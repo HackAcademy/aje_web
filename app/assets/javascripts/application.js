@@ -15,9 +15,3 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.nicescroll
-
-$(document).ready(
-	function() { 
-		$("html").niceScroll();
-	}
-);
