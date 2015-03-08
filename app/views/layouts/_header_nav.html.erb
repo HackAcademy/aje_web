@@ -1,24 +1,23 @@
-<div class="">
-	<nav class= "navbar navbar-default fixed" style="background-color: #fff;">
-		<div class="logo">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<%= image_tag('logo2.png') %>
-		</div>
-		<div class="menu-texto">
-			<ul>
-				<li>
-					<% if @home %>
-					<a href="#quienes-somos">Quienes Somos</a>
-					<% else %>
-					<%= link_to "Quienes Somos", root_path %>
-				<% end %>
-			</li>
-			<li><%= link_to "Mentores", mentor_path %></li>
-			<li><a href="#">Código de honor</a></li>
-			<li><a href="#">Eventos</a></li>
-			<li><%= link_to "Afiliación", afiliate_path %></li>
-			<li><%= link_to "Contácto", contact_path %></li>
-		</ul>
-	</div>
-</nav>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
+  <div class="container">
+    <div class="navbar-header">
+		<%= image_tag('logo2.png') %>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      	<%if root_path %>
+      		<li><a href="#quienes-somos">Quienes Somos</a></li>
+      	<%else%>
+      		<%= link_to "Quienes Somos", root_path %>
+      	<%end%>	
+        <li><%= link_to "Mentores", mentor_path %></li>
+        <li><a href="#">Código de honor</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><%= link_to "Afiliación", afiliate_path %></li>
+        <li><%= link_to "Contácto", contact_path %></li>
 
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
