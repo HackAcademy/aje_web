@@ -3,30 +3,30 @@
 </div>
 
 <div class="container">
-	<div class="row margin-to-afiliate">
-		<div class="col-md-6 col-md-offset-3">
-			<p><strong> La Asociacion Jovenes Texto de relleno lorem ipsum para nuevos emprendedores, La cual recoge a jovenes entre dieciocho.</strong></p>
-		</div>
-	</div>
 	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<div class="formu">
-				<%= simple_form_for @afiliate do |f| %>
-					<%= f.label :Nombre %>
-					<%= f.input :name, label: false, :required => true %>
-					<%= f.label :Apellido %>
-					<%= f.input :lastname, label: false, :required => true %>
-					<%= f.label :Cedula_de_identidad %>
-					<%= f.input :ci, label: false, :required => true %>
-					<%= f.label :Telefono %>
-					<%= f.input :phone, label: false, :required => true %>
-					<%= f.label :Email %>
-					<%= f.input :email, label: false, :required => true %>
-					<%= f.label :Empresa %>
-					<%= f.input :business, label: false, :required => true %>
-					<%= f.button :submit, 'ENVIAR' %>
-				<% end %>
-			</div>
+		<div>
+          <div class="content-formu">
+            <div class="text-center">
+              <p><strong>La Asociacion Jovenes Texto de relleno lorem ipsum para nuevos emprendedores, La cual recoge a jovenes entre dieciocho.</strong></p>
+            </div>
+                <div class="formu">
+                    <%= simple_form_for( @afiliate, :defaults => {:input_html => {:class => "formu-input" }}) do |f| %>
+                        <strong><%= f.label :Nombre %></strong>
+                        <%= f.input :name, label: false, :required => true%>
+                        <strong> <%= f.label :Apellido %></strong>
+                        <%= f.input :lastname, label: false, :required => true%>
+                        <strong><%= f.label :Cedula_de_identidad %></strong>
+                        <%= f.input :ci, label: false, :required => true%>
+                        <strong><%= f.label :Telefono %></strong>
+                        <%= f.input :phone, label: false, :required => true%>
+                        <strong> <%= f.label :Email %></strong>
+                        <%= f.input :email, label: false, :required => true%>
+                        <strong><%= f.label :Empresa %></strong>
+                        <%= f.input :business, label: false, :required => true%>
+                        <%= f.button :submit, 'ENVIAR', :class => "formu-button" %>
+                    <% end %>
+                </div>
+          </div>
 		</div>
 	</div>
 </div>

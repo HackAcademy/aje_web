@@ -1,40 +1,44 @@
 <div class="col-sm-12 banner-head">
 	Contáctanos
 </div>
-<div class="thin-box2"></div>
-<div class="registration-form">
-	<ziv class="registration-form-inner">
-		<%= simple_form_for @contact do |f| %>
-		<div class="col-md-8 col-md-offset-2">
-			<%= f.label :Nombre %>
-			<%= f.input :name, label: false, :required => false %>
-			<%= f.label :Email %>
-			<%= f.input :email, label: false, :required => false %>
-			<%= f.label :Asunto %>
-			<%= f.input :subject, label: false, :required => false %>
-			<%= f.label :Mensaje %>
-			<%= f.input :message, label: false, :as => :text, :required => false %>
-			<%= f.button :submit, 'ENVIAR' %>
-		<% end %>
-		</div>
-	</div>
+
+<div class="container">
+    <div class="row">
+        <div class="content-formu">
+          <div class="formu">
+            <%= simple_form_for( @contact, :defaults => {:input_html => {:class => "formu-input" }}) do |f| %>
+                <strong><%= f.label :Nombre %></strong>
+                <strong><%= f.input :name, label: false, :required => false %>
+                  <strong><%= f.label :Email %></strong>
+                <%= f.input :email, label: false, :required => false %>
+                  <strong><%= f.label :Asunto %></strong>
+                <%= f.input :subject, label: false, :required => false %>
+                  <strong><%= f.label :Mensaje %></strong>
+                <%= f.input :message, label: false, :as => :text, :required => false, :input_html => {:class => "formu-input formu-input-textarea" } %>
+                <%= f.button :submit, 'ENVIAR', :class => "formu-button" %>
+            <% end %>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 <div class="thin-box3"></div>
 <div class="social-segment">
 	<div class="social-segment-inner">
-		<div class="social-box">
+		<div class="social-box col-sm-3">
 			<%= image_tag('sobre.png') %>
 			<p>info@ajevenezuela.org</p>
 		</div>
-		<div class="social-box">
+		<div class="social-box col-sm-3">
 			<%= image_tag('twitter.png') %>
 			<p>@AjeVenezuela</p>
 		</div>
-		<div class="social-box">
+		<div class="social-box col-sm-3">
 			<%= image_tag('instagram.png') %>
 			<p>@Ajevenezuela</p>
 		</div>
-		<div class="social-box">
+		<div class="social-box col-sm-3">
 			<%= image_tag('facebook.png') %>
 			<p>/AjeVenezuela</p>
 		</div>
