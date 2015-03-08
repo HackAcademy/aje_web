@@ -109,22 +109,39 @@
 		</div>
 	</div>
 </section>
-<section id="aliados">
+<section id="aliados" class="hidden-xs">
 	<div class="text-center cont-aliados cl-white">
 		<h1>Nuestros Aliados</h1>
 	</div>
 	<div id="carousel-example-generic" class="carousel slide cl-white" data-ride="carousel">
 		<div class="container text-center">
 			<div class="carousel-inner car-aliados" role="listbox">
-				<div class="item active">
+				<div class="item active ">
 					<%= image_tag('aliados.jpg', :class => "car-image2") %>
 				</div>
-				<div class="item">
+				<div class="item ">
 					<%= image_tag('aliados.jpg', :class => "car-image2") %>
 				</div>
 			</div>
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
 			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+		</div>
+	</div>
+</section>
+<section id="aliados-xs" class="hidden-sm hidden-md hidden-lg">
+	<div class="text-center cont-aliados cl-white">
+		<h1>Nuestros Aliados</h1>
+	</div>
+	<div class="cl-white">
+		<div class="row">
+			<div class="col-xs-12">
+				<%= image_tag('ene.jpg', :class => "") %>
+				<%= image_tag('fede.png', :class => "") %>
+			</div>
+			<div class="col-xs-12">
+				<%= image_tag('4geeks.png', :class => "") %>
+				<%= image_tag('ene.jpg', :class => "") %>
+			</div>
 		</div>
 	</div>
 </section>
