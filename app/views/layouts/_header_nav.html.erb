@@ -2,14 +2,14 @@
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
   <div class="container">
     <div class="navbar-header">
-		<%= image_tag('logo2.png') %>
+		  <%= image_tag('logo2.png') %>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-      	<%if root_path %>
+      	<%if current_page?('/') %>
       		<li><a href="#quienes-somos">Quienes Somos</a></li>
       	<%else%>
-      		<%= link_to "Quienes Somos", root_path %>
+          <li><%= link_to "Quienes Somos", root_path %></li>
       	<%end%>	
         <li><%= link_to "Mentores", mentor_path %></li>
         <li><a href="#">Código de honor</a></li>
