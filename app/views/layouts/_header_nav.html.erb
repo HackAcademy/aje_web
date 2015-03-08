@@ -1,14 +1,15 @@
-<nav class= "navbar navbar-default" style="background-color: #fff;">
-	<div class="logo">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<%= image_tag('logo2.png') %>
-	</div>
-	<div class="menu-texto">
-		<ul>
-			<li>
-				<% if @home %>
+<div class="">
+	<nav class= "navbar navbar-default fixed" style="background-color: #fff;">
+		<div class="logo">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<%= image_tag('logo2.png') %>
+		</div>
+		<div class="menu-texto">
+			<ul>
+				<li>
+					<% if @home %>
 					<a href="#quienes-somos">Quienes Somos</a>
-				<% else %>
+					<% else %>
 					<%= link_to "Quienes Somos", root_path %>
 				<% end %>
 			</li>
@@ -20,3 +21,4 @@
 		</ul>
 	</div>
 </nav>
+
