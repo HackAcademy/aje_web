@@ -1,6 +1,5 @@
 class HomeController < ApplicationController
 	def index
-		@home = true
 	end
 	def contact
 		@contact = new

@@ -1,6 +1,6 @@
 <!-- agregar estilo de bootstrap o el que sea necesario -->
 
-<div class="col-sm-12 banner-head">
+<div class="col-sm-12 banner-head contact-header">
 	Mentores
 </div>
 <div class="container">
@@ -11,7 +11,7 @@
 				<div class="mentor">
 					<div class="mentorAvatar">
 					<!-- insertar la imagen de cada mentor -->
-						<%= image_tag("", class: "img-responsive avatarMentor") %>
+						<%= image_tag m.avatar.url(:medium), class: "img-responsive avatarMentor" %>
 
 						<div class="socialHover" style="display:none;">
 							<a href="<% m.twitter %>">
@@ -30,7 +30,8 @@
 							<%= m.name %> <%= m.lastname %>
 						</p>
 						<p>
-							<%= m.description %>
+							<%= truncate m.description, length: 100 %>
+							<%= link_to "Ver mas", root_path %>
 						</p>
 					</div>
 				</div>

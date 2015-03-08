@@ -19,7 +19,6 @@ ActiveAdmin.register Mentor do
       input :lastname
       input :age
       input :email
-      input :email
       input :description
       input :business
       input :facebook
