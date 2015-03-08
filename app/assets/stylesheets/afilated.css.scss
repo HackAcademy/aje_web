@@ -12,36 +12,47 @@
 	padding-top: 65px;
 	margin-top: 70px;
 }
-.content{
+.content-formu{
+    margin:auto;
 	margin-top: 65px;
 	font-size: 14px;
 	font-family: 'Roboto';
 	text-align: center;
 	color: #8e8e8e;
 	margin-bottom: 55px;
+    width: 45%;
 }
-input[type=text]{
-	width: 100%;
+.formu-input{
+	width: 100% !important;
 	height:46px;
-	border: 0px;
-	margin: 5px 0px 10px 0px;
+	border: 0 !important;
+	margin: 5px 0 10px 0;
+    font-size: 1.60em !important;
+    border-radius: 0 !important;
 }
 .formu{
+    margin: auto;
 	text-align: left;
+    width: 75%;
 }
-input[type=button]{
+.formu-button{
 	width: 100%;
 	height:45px;
-	border: 0px solid black;
-	font-family: inherit;
-	font-weight: bold;
-	font-size: 18px;
+	border: 0 solid black !important;
+	font-family: inherit !important;
+	font-weight: bold !important;
+	font-size: 18px !important;
 	letter-spacing: 1.2px;	
-	margin: 10px 0px 10px 0px;
-	background-color: black;
-	color: #64BBE8;
+	margin: 10px 0 10px 0;
+	background-color: black !important;
+	color: #64BBE8 !important;
 	text-transform: uppercase;
+    background-image: none !important;
+    border-radius: 0 !important;
 }
 .margin-to-afiliate{
 	margin-top: 20px;
+}
+.formu-input-textarea{
+  height: 90px;
 }

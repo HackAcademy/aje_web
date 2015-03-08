@@ -48,7 +48,7 @@ group :development, :test do
   gem 'spring'
 
   # windows solution errors gems
-  #gem 'tzinfo-data'
-  #gem 'coffee-script-source', '1.8.0'
+  gem 'tzinfo-data'
+  gem 'coffee-script-source', '1.8.0'
 end
 
