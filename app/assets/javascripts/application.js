@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require jquery.nicescroll
+/* require jquery.nicescroll*/
 
 /*$(document).ready(function(){$("html").niceScroll();});*/
