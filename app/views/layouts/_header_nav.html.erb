@@ -1,10 +1,11 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
   <div class="container">
-    <div class="navbar-header">
+  <div class="row">
+    <div class="navbar-header logo-navbar">
 		  <%= image_tag('logo2.png') %>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
+    <div id="navbar" class="navbar-collapse collapse menu-navbar">
       <ul class="nav navbar-nav">
       	<%if current_page?('/') %>
       		<li><a href="#quienes-somos">Quienes Somos</a></li>
@@ -18,5 +19,6 @@
         <li><%= link_to "Contácto", contact_path %></li>
       </ul>
     </div><!--/.nav-collapse -->
+    </div>
   </div>
 </nav>

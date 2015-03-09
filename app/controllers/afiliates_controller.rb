@@ -3,8 +3,10 @@ class AfiliatesController < ApplicationController
   	@afiliate = Afiliate.new(afiliate_params)
     	if @afiliate.save
     		redirect_to afiliate_path
+        flash[:notice] = "Registro exitoso."
     	else
-    		render 'index'
+        redirect_to afiliate_path
+    		flash[:notice] = "No se ha podido procesar el registro."
     	end
 	end
  

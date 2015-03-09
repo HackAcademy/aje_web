@@ -2,7 +2,6 @@
 	font-size: 16px;
 }
 .navbar-header{
-	margin-left: -110px!important;
 }
 .navbar{
 	-webkit-box-shadow: 0 12px 0px 0px rgba(50, 50, 50, 0.10);
@@ -10,12 +9,20 @@
 	box-shadow:         0 12px 0px 0px rgba(50, 50, 50, 0.10);
 }
 .navbar-nav{
-	margin-top: 15px;
-	margin-left: 266px;
 }
 .navbar-nav li{
 	margin-right: -15px;
 }
 .navbar-nav a:hover{
 	color: #64BBE8!important;
+}
+.logo-navbar{
+	float: left;
+}
+.menu-navbar{
+	float: right;
+}
+.menu-navbar > ul > li{
+	padding-top: 2%;
+	font-weight: bold;
 }

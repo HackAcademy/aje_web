@@ -1,7 +1,6 @@
 <div class="col-sm-12 banner-head">
 	Afiliate con nosotros
 </div>
-
 <div class="container">
 	<div class="row">
 		<div>
@@ -10,6 +9,9 @@
               <p><strong>La Asociacion Jovenes Texto de relleno lorem ipsum para nuevos emprendedores, La cual recoge a jovenes entre dieciocho.</strong></p>
             </div>
                 <div class="formu">
+                    <% flash.each do |name, msg| %>
+                        <%= content_tag :div, msg, class: "alert alert-info" %>
+                    <% end %>
                     <%= simple_form_for( @afiliate, :defaults => {:input_html => {:class => "formu-input" }}) do |f| %>
                         <strong><%= f.label :Nombre %></strong>
                         <%= f.input :name, label: false, :required => true%>
