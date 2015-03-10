@@ -23,5 +23,22 @@ $(document).ready(function(){
 	});
 });
 
+$(document).ready(function() {
 
+	var nav = $('#scroll-nav')
+	var nav_offset = nav.offset();
+
+  $(window).on('scroll', function() {
+  	
+  	if($(window).scrollTop() > nav_offset.top) {
+  		nav.addClass('nav-t');
+  		nav.removeClass('nav-b');
+  	} else {
+  		nav.addClass('nav-b');
+  		nav.removeClass('nav-t');
+  	}
+
+  });
+
+});
 
