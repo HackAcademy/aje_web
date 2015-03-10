@@ -1,5 +1,9 @@
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
+<%if current_page?('/')%>
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff; margin-top: 13px;">
+<%else %>
+  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
+<%end%>
   <div class="container">
   <div class="row">
     <div class="navbar-header logo-navbar">
