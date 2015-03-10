@@ -69,9 +69,34 @@
 	-moz-box-shadow: inset 1px 30px 0px rgba(249, 249, 249, 0.51);
 	box-shadow: inset 1px 30px 0px rgba(249, 249, 249, 0.51);
 }
-
-
-
+.see-more-mentor{
+	position: absolute;
+	right: 29%;
+	bottom: 29px;
+	font-size: 14px;
+}
+.img-mentor-modal{
+margin-bottom: 20px;
+}
+.name-mentor-modal{
+	font-family:'Roboto';
+	font-weight: bold;
+	font-size: 24px; 
+}
+.description-mentor-modal{
+	font-size: 14px;
+	font-family: 'Roboto';
+	line-height: 160%;
+}
+.social-modal{
+	float: left;
+}
+.social-modal .twitter, 
+.social-modal .facebook, 
+.social-modal .instagram
+{
+margin-top: 0px;
+}
 
 
 
