@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
 	def index
+		@allies = Ally.all
 	end
 	def contact
 		@contact = new

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150307033631) do
+ActiveRecord::Schema.define(version: 20150310172102) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -59,6 +59,16 @@ ActiveRecord::Schema.define(version: 20150307033631) do
 
   add_index "afiliates", ["ci"], name: "index_afiliates_on_ci", unique: true
   add_index "afiliates", ["email"], name: "index_afiliates_on_email", unique: true
+
+  create_table "allies", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
 
   create_table "mentors", force: :cascade do |t|
     t.string   "name"
