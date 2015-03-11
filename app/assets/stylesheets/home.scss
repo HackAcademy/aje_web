@@ -10,8 +10,17 @@
 	}
 }
 .carousel-indicators{
-	left: 90% !important;
 	margin-left: 0
+}
+@media (min-width: 350px) {
+	.carousel-indicators{
+		left: 80% !important;
+	}	
+}
+@media (min-width: 768px) {
+	.carousel-indicators{
+		left: 90% !important;
+	}	
 }
 .carousel-indicators li{
 	background: white;
@@ -44,9 +53,15 @@ a.carousel-control:focus{ 	opacity: 0; }
 .container-car h1{
 	color: #666666 !important;
 }
-@media (min-width:350px ) {
+@media (min-width: 530px) and (max-width: 649px){
 	.container-car{
-		margin-top: -300px;
+		margin-top: -165px;
+		margin-left: 20px;
+	}
+}
+@media (min-width:650px ) {
+	.container-car{
+		margin-top: -228px;
 		margin-left: 20px;
 	}	
 }
@@ -180,13 +195,18 @@ a.btn-afiliate{
 .car-image{
 	width: 100% !important;
 }
+@media screen and (min-width: 768px){
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+		height: 400px !important;
+	}
+}
 @media (min-width: 992px){
-	.car-image{
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
 		height: 490px !important;
 	}
 }
 @media (min-width: 1200px){
-	.car-image{
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
 		height: 660px !important;
 	}
 }
