@@ -1,28 +1,34 @@
 <!-- Fixed navbar -->
 <%if current_page?('/')%>
-  <nav class="navbar navbar-default navbar-fixed-top nav-b" id="scroll-nav" style="background-color: #fff;">
-<%else %>
+<nav class="navbar navbar-default navbar-fixed-top nav-b" id="scroll-nav" style="background-color: #fff;">
+  <%else %>
   <nav class="navbar navbar-default navbar-fixed-top nav-t2" id="scroll-nav" style="background-color: #fff;">
-<%end%>
-  <div class="container">
-  <div class="row">
-    <div class="navbar-header logo-navbar">
-		  <%= image_tag('logo2.png') %>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse menu-navbar">
-      <ul class="nav navbar-nav">
-      	<%if current_page?('/') %>
-      		<li><a href="#quienes-somos">Quienes Somos</a></li>
-      	<%else%>
-          <li><%= link_to "Quienes Somos", root_path %></li>
-      	<%end%>	
-        <li><%= link_to "Mentores", mentor_path %></li>
-        <li><a href="#">Código de honor</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><%= link_to "Afiliación", afiliate_path %></li>
-        <li><%= link_to "Contácto", contact_path %></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-    </div>
-  </div>
-</nav>
+    <%end%>
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header logo-navbar">
+          <%= image_tag('logo2.png') %>
+        </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="navbar" class="navbar-collapse collapse menu-navbar">
+          <ul class="nav navbar-nav">
+           <%if current_page?('/') %>
+           <li><a href="#quienes-somos">Quienes Somos</a></li>
+           <%else%>
+           <li><%= link_to "Quienes Somos", root_path %></li>
+           <%end%>	
+           <li><%= link_to "Mentores", mentor_path %></li>
+           <li><a href="#">Código de honor</a></li>
+           <li><a href="#">Eventos</a></li>
+           <li><%= link_to "Afiliación", afiliate_path %></li>
+           <li><%= link_to "Contácto", contact_path %></li>
+         </ul>
+       </div><!--/.nav-collapse -->
+     </div>
+   </div>
+ </nav>
