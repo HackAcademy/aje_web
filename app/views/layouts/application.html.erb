@@ -22,12 +22,10 @@
   	<%= csrf_meta_tags %>
 </head>
 <body>
-<%= render "layouts/header_nav" %>
-
-
-<%= yield %>
-
-
-<%= render "layouts/footer" %>
+<div>
+  <%= render "layouts/header_nav" %>
+  <%= yield %>
+  <%= render "layouts/footer" %>
+</div>
 </body>
 </html>
