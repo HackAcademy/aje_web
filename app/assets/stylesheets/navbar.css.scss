@@ -1,6 +1,15 @@
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	background-color: #FDFDFF;
 }
+.navbar-collapse{
+	overflow-x:hidden;
+}
+.navbar-collapse.in{
+	overflow-y:hidden;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #fff;
+}
 .navbar{
 	font-size: 16px;
 }
@@ -25,6 +34,16 @@
 .menu-navbar > ul > li{
 	padding-top: 2%;
 	font-weight: bold;
+}
+@media (min-width: 768px){
+	.navbar-default .navbar-nav>li>a {
+		font-size: 14px;
+	}
+}
+@media (min-width: 992px){
+	.navbar-default .navbar-nav>li>a {
+		font-size: 16px;
+	}
 }
 .nav-t{
 	margin-top: 0;
