@@ -109,7 +109,7 @@
 		</div>
 	</div>
 </section>
-<section id="aliados" class="hidden-xs">
+<section id="aliados" class="">
 	<div class="text-center cont-aliados cl-white">
 		<h1>Nuestros Aliados</h1>
 	</div>
@@ -137,24 +137,6 @@
 			</div>
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
 			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
-		</div>
-	</div>
-</section>
-<section id="aliados-xs" class="hidden-sm hidden-md hidden-lg">
-	<div class="text-center cont-aliados cl-white">
-		<h1>Nuestros Aliados</h1>
-	</div>
-	<div class="cl-white">
-		<div class="row">
-			<% @allies.each do |ally| %>
-				<div class="col-xs-3">
-					<%= image_tag ally.image.url(:medium) %>
-				</div>
-			<%end%>
-			<div class="col-xs-12">
-				<%= image_tag('4geeks.png', :class => "") %>
-				<%= image_tag('ene.jpg', :class => "") %>
-			</div>
 		</div>
 	</div>
 </section>
