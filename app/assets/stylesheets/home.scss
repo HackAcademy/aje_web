@@ -1,8 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.carousel{
+    border-bottom: solid 15px #E4E4E4;
+    padding-bottom: 31px;
+}
 
 
+.carousel-control{
+	opacity: 1!important;
+    background-image: none!important;
+}
 
 @media (min-width: 992px){
 	#carousel-home-generic{
@@ -353,4 +361,20 @@ h1{
 	.car-aliados{
 		height: 140px;		
 	}
+}
+.aliados-border{
+    border-left: solid 1px rgb(171, 163, 163);
+    border-right: solid 1px rgb(171, 163, 163);
+    box-shadow: 33px 0 15px 23px rgba(129, 123, 123, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+    box-shadow: 7px 0 4px -4px rgba(231, 231, 231, 0.8), -7px 0 4px -4px rgba(231, 231, 231, 0.8);
+}
+.aliados-arrow-left{
+    margin-top: 57px;
+    margin-right: 75px;
+    color: #93D2FB;
+}
+.aliados-arrow-right{
+    margin-top: 57px;
+    margin-left: 75px;
+    color: #93D2FB;
 }

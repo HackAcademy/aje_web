@@ -115,7 +115,7 @@
 	</div>
 	<div id="carousel-example-generic" class="carousel slide cl-white" data-ride="carousel">
 		<div class="container text-center">
-			<div class="carousel-inner car-aliados" role="listbox">
+			<div class="carousel-inner car-aliados aliados-border" role="listbox">
 				<div class="item active ">
 					<div class="row">
 						<% @allies.each do |ally| %>
@@ -135,8 +135,16 @@
 					</div>
 				</div>
 			</div>
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"></a>
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true">
+						
+				</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-menu-right aliados-arrow-right" aria-hidden="true">
+						
+				</span>
+			</a>
 		</div>
 	</div>
 </section>
