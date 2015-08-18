@@ -1,0 +1,102 @@
+.inner-container{
+	width: 90%;
+	margin: auto;
+}
+.mentor-box{
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 0px 10px
+}
+.mentors-container{
+	padding-top: 60px;
+	margin-bottom: 40px
+}
+.mentor{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	margin: auto;
+	height: inherit;
+	background-color: white;
+}
+.avatarMentor{
+	margin: auto;
+	border-radius: 4px;
+	width: 245px;
+	height: 220px!important;
+}
+.mentor-description{
+	padding-left: 10px;
+	padding-right: 15px;
+	font-size: 16px;
+	font-family: 'Roboto';
+	text-align: left;
+	color: #8e8e8e;
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+.mentor-description .mentor-name{
+	color: #666666;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+.socialHover{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+	position: absolute;
+	top: 1px;
+	width: 245px;
+	height: 220px;
+	text-align: center;
+	display: none;
+}
+.mentorAvatar:hover .socialHover{
+	display: block;
+}
+.s-hover{
+	margin-top: 35%;
+}
+.socialHover a i{
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+}
+.socialHover a i:hover{
+	-webkit-box-shadow: inset 1px 30px 0px rgba(249, 249, 249, 0.51);
+	-moz-box-shadow: inset 1px 30px 0px rgba(249, 249, 249, 0.51);
+	box-shadow: inset 1px 30px 0px rgba(249, 249, 249, 0.51);
+}
+.see-more-mentor{
+	position: absolute;
+	right: 29%;
+	bottom: 29px;
+	font-size: 14px;
+}
+.img-mentor-modal{
+margin-bottom: 20px;
+}
+.name-mentor-modal{
+	font-family:'Roboto';
+	font-weight: bold;
+	font-size: 24px; 
+}
+.description-mentor-modal{
+	font-size: 14px;
+	font-family: 'Roboto';
+	line-height: 160%;
+}
+.social-modal{
+	float: left;
+}
+.social-modal .twitter, 
+.social-modal .facebook, 
+.social-modal .instagram
+{
+margin-top: 0px;
+}
+
+
+

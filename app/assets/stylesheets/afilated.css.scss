@@ -1,0 +1,58 @@
+.banner-head{
+	width: 100%;
+	background-color: #64BBE8;
+	height: 150px;
+	-webkit-box-shadow: 0 12px 0px 0px rgba(182, 182, 182, 0.3);
+	-moz-box-shadow:    0 12px 0px 0px rgba(182, 182, 182, 0.3);
+	box-shadow: 0 12px 0px rgba(182, 182, 182, 0.3);
+	color: white;
+	font-size: 40px;
+	font-family: 'Roboto';
+	text-align: center;
+	padding-top: 65px;
+	margin-top: 70px;
+}
+.content-formu{
+    margin:auto;
+	margin-top: 65px;
+	font-size: 14px;
+	font-family: 'Roboto';
+	text-align: center;
+	color: #8e8e8e;
+	margin-bottom: 55px;
+    width: 45%;
+}
+.formu-input{
+	width: 100% !important;
+	height:46px;
+	border: 0 !important;
+	margin: 5px 0 10px 0;
+    font-size: 1.60em !important;
+    border-radius: 0 !important;
+}
+.formu{
+    margin: auto;
+	text-align: left;
+    width: 75%;
+}
+.formu-button{
+	width: 100%;
+	height:45px;
+	border: 0 solid black !important;
+	font-family: inherit !important;
+	font-weight: bold !important;
+	font-size: 18px !important;
+	letter-spacing: 1.2px;	
+	margin: 10px 0 10px 0;
+	background-color: black !important;
+	color: #64BBE8 !important;
+	text-transform: uppercase;
+    background-image: none !important;
+    border-radius: 0 !important;
+}
+.margin-to-afiliate{
+	margin-top: 20px;
+}
+.formu-input-textarea{
+  height: 90px;
+}

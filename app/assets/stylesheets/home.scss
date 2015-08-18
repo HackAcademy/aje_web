@@ -1,3 +1,380 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.carousel{
+    border-bottom: solid 15px #E4E4E4;
+    padding-bottom: 31px;
+}
+
+
+.carousel-control{
+	opacity: 1!important;
+    background-image: none!important;
+}
+
+@media (min-width: 992px){
+	#carousel-home-generic{
+		height: 480px;
+	}
+}
+.carousel-indicators{
+	margin-left: 0
+}
+@media (min-width: 350px) {
+	.carousel-indicators{
+		left: 80% !important;
+	}	
+}
+@media (min-width: 768px) {
+	.carousel-indicators{
+		left: 90% !important;
+	}	
+}
+.carousel-indicators li{
+	background: white;
+	width: 20px;
+	height: 20px;
+}
+.carousel-indicators .active {
+	background: #65bce9 !important;
+	width: 20px;
+	height: 20px;
+}
+@media (min-width: 1200px){
+	#carousel-home-generic{
+		height: 660px;
+	}
+}
+.carousel-control{ 	opacity: 0; }
+.carousel-control:hover{ 	opacity: 0; }
+
+a.carousel-control:focus{ 	opacity: 0; }
+
+.car-text-right{
+	text-align: right !important;
+	width: 70px;
+}
+.container-car{
+	position: absolute;
+	margin-bottom: 140px;
+}
+.container-car h1{
+	color: #666666 !important;
+}
+@media (min-width: 530px) and (max-width: 649px){
+	.container-car{
+		margin-top: -165px;
+		margin-left: 20px;
+	}
+}
+@media (min-width:650px ) {
+	.container-car{
+		margin-top: -228px;
+		margin-left: 20px;
+	}	
+}
+@media (min-width: 768px) {
+	.container-car{
+		margin-top: -270px;
+		margin-left: 80px;
+	}	
+}
+@media (min-width: 992px) {
+	.container-car{
+		margin-top: -370px;
+		margin-left: 100px;
+	}	
+}
+@media (min-width: 1200px) {
+	.container-car{
+		margin-top: -470px;
+		margin-left: 156px;
+	}	
+}
+
+@media (min-width: 768px) {
+	.container-car h1{
+		font-size: 40px;
+	}	
+}
+@media (min-width: 992px) {
+	.container-car h1{
+		font-size: 50px;
+	}	
+}
+@media (min-width: 1200px) {
+	.container-car h1{
+		font-size: 60px;
+	}	
+}
+@media (min-width: 350px) {
+	.text-car{
+		width: 190px;
+		font-size: 10px;
+	}
+}
+@media (min-width: 768px) {
+	.text-car{
+		width: 320px;
+		font-size: 10px;
+	}
+}
+@media (min-width: 992px) {
+	.text-car{
+		width: 340px;
+		font-size: 12px;
+	}
+}
+@media (min-width: 1200px) {
+	.text-car{
+		width: 380px;
+		font-size: 20px;
+	}	
+}
+.cont-p-car p{
+	font-weight: 700;
+}
+@media (min-width: 350px) {
+	.cont-p-car{
+		width: 190px;
+	}		
+	.cont-p-car p{
+		font-size: 10px;
+	}
+}
+@media (min-width: 768px) {
+	.cont-p-car{
+		width: 180px;
+	}	
+	.cont-p-car p{
+		font-size: 10px;
+	}
+}
+@media (min-width: 992px) {
+	.cont-p-car{
+		width: 250px;
+	}
+	.cont-p-car p{
+		font-size: 12px;
+	}
+}
+@media (min-width: 1200px) {
+	.cont-p-car{
+		width: 360px;
+	}	
+	.cont-p-car p{
+		font-size: 18px;
+	}
+}
+.btn-afiliate{
+	background: #151515;
+	text-align: center;		
+	padding-top: 12px;
+	width: 150px;
+	height: auto;
+}
+a.btn-afiliate{
+	font-size: 18px;
+	color: #65bce9;
+	font-weight: 700;
+}
+.btn-afiliate:hover{
+	color: white;
+}
+@media (min-width: 350px) {
+	.btn-afiliate{
+		font-size: 16px;
+		padding-top: 5px;
+		width: 130px;
+	}
+}
+@media (min-width: 992px){
+	.btn-afiliate{
+		width: 200px;
+	}
+}
+@media (min-width: 1200px){
+	.btn-afiliate{
+		width: 305px;
+		height: 51px;
+		padding-top: 12px;
+	}
+}
+.car-image{
+	width: 100% !important;
+}
+@media screen and (min-width: 768px){
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+		height: 400px !important;
+	}
+}
+@media (min-width: 992px){
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+		height: 490px !important;
+	}
+}
+@media (min-width: 1200px){
+	.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+		height: 660px !important;
+	}
+}
+.car-image2{
+	width: 100%;
+	height: 100%;
+}
+@media (min-width: 768px) {
+	img.car-image2{
+		height: 150px;
+	}
+}
+@media (min-width: 992px) {
+	img.car-image2{
+		height: 190px;
+	}
+}
+@media (min-width: 1200px) {
+	img.car-image2{
+		height: 229px;
+	}
+}
+.margin-side{
+	margin: 0;
+}
+.aliados-img{
+	display: inline-block;
+}
+.cl-blue{
+	background: #64bbe8;
+	color: #ffffff;
+}
+.cl-black{
+	background: #151515;
+	color: #ffffff;
+	border-top: 13px solid #000000;
+	border-bottom: 13px solid #f3f3f3; 
+}
+
+@media (min-width: 768px){
+	.cl-blue{
+		border-top: 13px solid #51acd0;
+		border-bottom: 0;
+	}
+}
+@media (min-width: 992px){
+	.cl-blue{
+		border-top: 13px solid #51acd0;
+		border-bottom: 13px solid #f3f3f3;
+	}
+}
+.cl-white{
+	background: #ffffff;
+}
+.cont-blue, .cont-black{
+	padding-bottom: 45px;
+}
+@media (min-width: 768px){
+	.cont-blue{
+		height: auto;
+
+	}
+}
+@media (min-width: 992px){
+	.cont-blue{
+		height: 413px;
+
+	}
+
+}
+@media (min-width: 1200px){
+	.cont-blue{
+		height: 365px;
+
+	}
+}
+@media (min-width: 768px){
+	.cont-black{
+		height: auto;
+
+	}
+}
+@media (min-width: 992px){
+	.cont-black{
+		height: 413px;
+
+	}
+
+}
+@media (min-width: 1200px){
+	.cont-black{
+		height: 365px;
+
+	}
+}
+.text-title h1{
+	font-size: 40px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+	color: white;
+}
+.text-center h1{
+	padding-top: 24px;
+	padding-bottom: 42px;
+	color: #9e9e9e;	
+}
+.cont-p p{
+	font-size: 16px;
+}
+@media (min-width: 768px){
+	.text-title h1{
+		font-size: 40px;
+	}
+	.cont-p p{
+		font-size: 17px;
+	}
+}
+@media (min-width: 992px){
+	.text-title h1{
+		font-size: 34px;
+	}
+	.cont-p p{
+		font-size: 15px;
+	}
+}
+.cont-aliados h1{
+	margin-top: 0;
+}
+h1{
+	margin-bottom: 0;
+}
+
+@media(min-width: 768px){
+	.car-aliados{
+		height: 150px;
+	}
+}
+@media(min-width: 992px){
+	.car-aliados{
+		height: 190px;
+	}
+}
+@media(min-width: 1200px){
+	.car-aliados{
+		height: 140px;		
+	}
+}
+.aliados-border{
+    border-left: solid 1px rgb(171, 163, 163);
+    border-right: solid 1px rgb(171, 163, 163);
+    box-shadow: 33px 0 15px 23px rgba(129, 123, 123, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+    box-shadow: 7px 0 4px -4px rgba(231, 231, 231, 0.8), -7px 0 4px -4px rgba(231, 231, 231, 0.8);
+}
+.aliados-arrow-left{
+    margin-top: 57px;
+    margin-right: 75px;
+    color: #93D2FB;
+}
+.aliados-arrow-right{
+    margin-top: 57px;
+    margin-left: 75px;
+    color: #93D2FB;
+}

@@ -1,0 +1,170 @@
+<section id="carousel">
+	<div id="carousel-home-generic" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators car-text-right">
+			<li data-target="#carousel-home-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-home-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-home-generic" data-slide-to="2"></li>
+		</ol>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<%= image_tag('image1.jpg', :class => "car-image") %>
+				<div class="container-car">
+					<h1>Afiliate</h1>
+					<div class="text-car">
+						<h2>
+							en la Asociación de Jóvenes empresarios 
+							de Venezuela
+						</h2>
+					</div>
+					<div class="cont-p-car hidden-xs">
+						<br>
+						<p>
+							jóvenes entre dieciocho y cuarenta años con empresas o proyectos de empresa
+						</p>
+					</div>
+					<%= link_to "Afiliación", afiliate_path, :class => "btn btn-afiliate" %>
+				</div>
+			</div>
+			<div class="item">
+				<%= image_tag('image1.jpg', :class => "car-image") %>
+				<div class="container-car">
+					<h1>Afiliate</h1>
+					<div class="text-car">
+						<h2>
+							en la Asociación de Jóvenes empresarios 
+							de Venezuela
+						</h2>
+					</div>
+					<div class="cont-p-car hidden-xs">
+						<br>
+						<p>
+							jóvenes entre dieciocho y cuarenta años con empresas o proyectos de empresa
+						</p>
+					</div>
+					<%= link_to "Afiliación", afiliate_path, :class => "btn btn-afiliate" %>
+				</div>
+			</div>
+			<div class="item">
+				<%= image_tag('image1.jpg', :class => "car-image") %>
+				<div class="container-car">
+					<h1>Afiliate</h1>
+					<div class="text-car">
+						<h2>
+							en la Asociación de Jóvenes empresarios 
+							de Venezuela
+						</h2>
+					</div>
+					<div class="cont-p-car hidden-xs">
+						<br>
+						<p>
+							jóvenes entre dieciocho y cuarenta años con empresas o proyectos de empresa
+						</p>
+					</div>
+					<%= link_to "Afiliación", afiliate_path, :class => "btn btn-afiliate" %>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel-home-generic" role="button" data-slide="prev"></a>
+		<a class="right carousel-control" href="#carousel-home-generic" role="button" data-slide="next"></a>
+	</div>
+</section>
+<section id="quienes-somos">
+	<div class="row margin-side">
+		<div class=" col-md-8 cl-blue cont-blue">
+			<div class="col-md-2 hidden-sm hidden-md"></div>
+			<div class="col-md-6 col-lg-5 ">
+				<div class="text-title">
+					<h1>Quienes somos</h1>
+				</div>
+				<div class="text-justify cont-p">
+					<p>
+						La Asociación Jóvenes Empresarios de Venezuela es una iniciativa de empresarios para nuevos prendedores, cual recoge entre sus miembros a jóvenes entre dieciocho y cuarenta años con empresas o proyectos de esa ubicados en el territorio venezolano. 	
+					</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-5">
+				<div class="text-title">
+					<h1>Pilares</h1>
+				</div>
+				<div class="text-justify cont-p">
+					<p>
+						La Asociación Jóvenes Empresarios de Venezuela es una iniciativa de empresarios para nuevos prendedores, cual recoge entre sus miembros a jóvenes entre dieciocho y cuarenta.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class=" col-md-4 col-lg-4 cl-black cont-black">
+			<div class="col-md-12">
+				<div class="text-title">
+					<h1>Que soñamos</h1>
+				</div>
+				<div class="text-justify cont-p">
+					<p>
+						Ser la institución líder en la promoción y desarrollo del espíritu emprendedor de los jóvenes empresarios de Venezuela, proveyéndolos de conocimientos y de valiosas experiencias.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="aliados" class="">
+	<div class="text-center cont-aliados cl-white">
+		<h1>Nuestros Aliados</h1>
+	</div>
+	<div id="carousel-example-generic" class="carousel slide cl-white" data-ride="carousel">
+		<div class="container text-center">
+			<div class="carousel-inner car-aliados aliados-border" role="listbox">
+				<div class="item active ">
+					<div class="row">
+						<% @allies.each do |ally| %>
+							<div class="col-md-3">
+								<%= image_tag ally.image.url(:medium) %>
+							</div>
+						<%end%>
+					</div>
+				</div>
+				<div class="item ">
+					<div class="row">
+						<% @allies.each do |ally| %>
+							<div class="col-md-3">
+								<%= image_tag ally.image.url(:medium) %>
+							</div>
+						<%end%>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true">
+						
+				</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-menu-right aliados-arrow-right" aria-hidden="true">
+						
+				</span>
+			</a>
+		</div>
+	</div>
+</section>
+<section id="red-social">
+	<div class="text-center">
+		<h1>Redes Sociales</h1>
+		<div class="row  margin-side text-center">
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<a class="twitter-timeline" href="https://twitter.com/ajevenezuela" data-widget-id="574351896737136641">Tweets por el @ajevenezuela.</a>
+				<script>
+					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+				</script>
+			</div>
+			
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<%= image_tag('social-facebook.png', :class => "") %>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<%= image_tag('social-instagram.png', :class => "") %>
+			</div>
+		</div>
+	</div>
+</section>
