@@ -16,7 +16,7 @@ role :db,  %w{deploy@45.55.156.190}
 # extended properties on the server.
 server '45.55.156.190', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
-set :branch, 'dev'
+set :branch, 'development'
 #set :rails_env, 'development'
 set :deploy_to, '/home/deploy/dev.aje_web'
 
