@@ -22,6 +22,8 @@ set :deploy_to, '/home/deploy/aje_web'
 
 set :ssh_options, keys: ['config/deploy_id_rsa'] if File.exist?('config/deploy_id_rsa')
 
+set :linked_files, fetch(:linked_files, []).push('config/secrets.yml')
+
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
 # you can see them in [net/ssh documentation](http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start)
