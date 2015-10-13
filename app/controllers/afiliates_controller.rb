@@ -5,8 +5,8 @@ class AfiliatesController < ApplicationController
     		redirect_to afiliate_path
         flash[:notice] = "Registro exitoso."
     	else
-        redirect_to afiliate_path
-    		flash[:notice] = "No se ha podido procesar el registro."
+        render 'home/afiliate'
+    		# flash[:notice] = "No se ha podido procesar el registro. "
     	end
 	end
  
