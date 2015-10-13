@@ -80,24 +80,17 @@
 	<div id="carousel-example-generic" class="carousel slide cl-white" data-ride="carousel">
 		<div class="container text-center">
 			<div class="carousel-inner car-aliados aliados-border" role="listbox">
-				<div class="item active ">
-					<div class="row">
-						<% @allies.each do |ally| %>
-							<div class="col-md-3">
-								<%= image_tag ally.image.url(:medium) %>
-							</div>
-						<%end%>
-					</div>
-				</div>
-				<div class="item ">
-					<div class="row">
-						<% @allies.each do |ally| %>
-							<div class="col-md-3">
-								<%= image_tag ally.image.url(:medium) %>
-							</div>
-						<%end%>
-					</div>
-				</div>
+                <% @allies.each_slice(4).each_with_index do |slice,index| %>
+                    <div class="item <%= index==0 ? 'active' : '' %>">
+                        <div class="row">
+                            <% slice.each do |ally| %>
+                                <div class="col-md-3">
+                                    <%= image_tag ally.image.url(:medium) %>
+                                </div>
+                            <%end%>
+                        </div>
+                    </div>
+                <% end %>
 			</div>
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true">

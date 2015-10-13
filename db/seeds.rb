@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 def create_mentor name,lastname, age, description, email, business, facebook = "#", twitter = "#", instagram = "#", image = 'avatar1.png'
-  Mentor.create(
+  Mentor.create!(
       name: name,
       lastname: lastname,
       age: age,
@@ -22,7 +22,7 @@ def create_mentor name,lastname, age, description, email, business, facebook = "
 end
 
 def create_ally name, image = 'avatar1.png'
-  Ally.create(
+  Ally.create!(
       name: name,
       image: File.new("#{Rails.root}/app/assets/images/#{image}")
   )
