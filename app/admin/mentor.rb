@@ -1,14 +1,13 @@
 ActiveAdmin.register Mentor do
 
  index do
-  column "Image" do |img|
-    image_tag img.avatar.url(:thumb)
-  end
+    column "Image" do |img|
+      image_tag img.avatar.url(:thumb)
+    end
     column :name
     column :lastname
     column :age
     column :email
-    column :description
     column :business
     actions
   end
@@ -17,13 +16,13 @@ ActiveAdmin.register Mentor do
     inputs 'Details', :multipart => true do
       input :name
       input :lastname
-      input :age
-      input :email
+      input :age, :as => :number
+      input :email, :as => :email
       input :description
       input :business
-      input :facebook
-      input :twitter
-      input :instagram
+      input :facebook, :as => :url
+      input :twitter, :as => :url
+      input :instagram, :as => :url
 
       f.input :avatar, :as => :file
 
