@@ -15,7 +15,8 @@ class HomeController < ApplicationController
 	def create
   		ContactsController
 	end
-  	def mentor
-   	 	@mentors = Mentor.all
-  	end
+
+	def mentor
+		@mentors = Mentor.all
+	end
 end
