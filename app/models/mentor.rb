@@ -1,5 +1,9 @@
 class Mentor < ActiveRecord::Base
-	has_attached_file :avatar, :styles => { :medium => "200x200>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+	has_attached_file :avatar, :styles => {
+															 :medium => "200x200>",
+															 :thumb => "100x100>"
+													 	},
+														:default_url => 'missing_:style.png'
   	validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   	validates :name, :lastname, :age, :description, :email, :business, presence: true

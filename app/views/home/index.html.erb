@@ -85,7 +85,9 @@
                         <div class="row">
                             <% slice.each do |ally| %>
                                 <div class="col-md-3">
+                                  <a href="<%= ally.url %>">
                                     <%= image_tag ally.image.url(:medium) %>
+                                  </a>
                                 </div>
                             <%end%>
                         </div>

@@ -1,8 +1,8 @@
 ActiveAdmin.register Mentor do
 
  index do
-    column "Image" do |img|
-      image_tag img.avatar.url(:thumb)
+    column "Image" do |mentor|
+      image_tag mentor.avatar.url(:thumb)
     end
     column :name
     column :lastname

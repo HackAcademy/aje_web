@@ -1,12 +1,19 @@
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require jquery.nicescroll
+
 $(document).ready(function(){
-  $("html").niceScroll();
+  $("html").niceScroll({
+      cursorwidth: '8px',
+      autohidemode: 'false'
+  });
   $(window).scroll(function(){
-    $("body").niceScroll(); 
+    $("body").niceScroll({
+        cursorwidth: '8px',
+        autohidemode: 'false'
+    });
   });
 });
 
@@ -20,3 +27,5 @@ $(window).on('scroll', function(){
     nav.removeClass('nav-t');
   }
 });
+
+//= require turbolinks
