@@ -48,7 +48,7 @@ namespace :deploy do
   task :build_missing_paperclip_styles do
     on roles(:app) do
       within release_path do
-        with rails_env: fetch(:rails_env) do
+        with rails_env: :production do
           execute :rake, "paperclip:refresh:missing_styles"
         end
       end
