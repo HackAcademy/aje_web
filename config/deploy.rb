@@ -26,7 +26,7 @@ set :repo_url, 'git@github.com:HackProyectos/aje_web.git'
 # set :linked_files, %w{config/database.yml}
 
 # Default value for linked_dirs is []
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
@@ -44,6 +44,18 @@ namespace :deploy do
     end
   end
 
+  desc "build missing paperclip styles"
+  task :build_missing_paperclip_styles do
+    on roles(:app) do
+      within release_path do
+        with rails_env: fetch(:rails_env) do
+          execute :rake, "paperclip:refresh:missing_styles"
+        end
+      end
+    end
+  end
+
+  after :deploy, :build_missing_paperclip_styles
   after :publishing, :restart
   after :finishing, 'deploy:cleanup'
 
