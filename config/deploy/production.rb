@@ -17,7 +17,7 @@ role :db,  %w{deploy@45.55.156.190}
 server '45.55.156.190', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
 set :branch, 'master'
-# set :rails_env, 'production'
+set :rails_env, 'production'
 set :deploy_to, '/home/deploy/aje_web'
 
 set :ssh_options, keys: ['config/deploy_id_rsa'] if File.exist?('config/deploy_id_rsa')
