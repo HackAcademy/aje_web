@@ -1,13 +1,17 @@
 <!-- agregar estilo de bootstrap o el que sea necesario -->
 
-<div class="col-sm-12 banner-head">
-	Mentores
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 banner-head">
+      Mentores
+    </div>
+  </div>
 </div>
 <div class="container">
 	<div class="inner-container">
 		<div class="row mentors-container">
             <% @mentors.each do |m| %>
-                <div class="col-sm-3 mentor-box">
+                <div class="col-xs-12 col-md-3 col-sm-4 col-lg-4 mentor-box">
                     <div class="mentor">
                         <div class="mentorAvatar">
                         <!-- insertar la imagen de cada mentor -->
@@ -28,12 +32,12 @@
                             <p class="mentor-name">
                                 <%= m.name %> <%= m.lastname %>
                             </p>
-                            <p>
-                                <%= truncate m.description, length: 100 %>
+                            <div>
+                                <%= m.description.truncate 100 %>
                                 <div type="button" class="btn btn-xs see-more-mentor" data-toggle="modal" data-target="#<%= m.id %>">
                                     Ver mas
                                 </div>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
