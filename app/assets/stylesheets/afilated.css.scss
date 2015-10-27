@@ -1,16 +1,24 @@
+.affiliated{
+  line-height: 35px;
+  padding-top: 20px !important;
+}
 .banner-head{
-	width: 100%;
-	background-color: #64BBE8;
-	height: 150px;
-	-webkit-box-shadow: 0 12px 0px 0px rgba(182, 182, 182, 0.3);
-	-moz-box-shadow:    0 12px 0px 0px rgba(182, 182, 182, 0.3);
-	box-shadow: 0 12px 0px rgba(182, 182, 182, 0.3);
-	color: white;
-	font-size: 40px;
-	font-family: 'Roboto';
-	text-align: center;
-	padding-top: 65px;
-	margin-top: 70px;
+  width: 100%;
+  background-color: #64BBE8;
+  height: 150px;
+  -webkit-box-shadow: 0 12px 0px 0px rgba(182, 182, 182, 0.3);
+  -moz-box-shadow:    0 12px 0px 0px rgba(182, 182, 182, 0.3);
+  box-shadow: 0 12px 0px rgba(182, 182, 182, 0.3);
+  color: white;
+  font-size: 40px;
+  font-family: 'Roboto';
+  text-align: center;
+  padding-top: 50px;
+  h2{
+    color: white;
+    font-size: 34px;
+    margin-top:15px;
+  }
 }
 .content-formu{
     margin:auto;
@@ -20,7 +28,7 @@
 	text-align: center;
 	color: #8e8e8e;
 	margin-bottom: 55px;
-    width: 45%;
+    width: 80%;
 }
 .formu-input{
 	width: 100% !important;

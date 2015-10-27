@@ -2,7 +2,7 @@
 	<div id="carousel-home-generic" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators car-text-right">
-			<li data-target="#carousel-home-generic" data-slide-to="0" class="active"></li>
+			<!--<li data-target="#carousel-home-generic" data-slide-to="0" class="active"></li>-->
 			<!--<li data-target="#carousel-home-generic" data-slide-to="1"></li>-->
 			<!--<li data-target="#carousel-home-generic" data-slide-to="2"></li>-->
 		</ol>
@@ -11,50 +11,50 @@
 			<div class="item active">
 				<%= image_tag('image1.jpg', :class => "car-image") %>
 				<div class="container-car">
-					<h1>Afiliate</h1>
+					<h1>Queremos</h1>
 					<div class="text-car">
 						<h2>
-							en la Asociación de Jóvenes empresarios 
-							de Venezuela
+                          construir una Venezuela llena de empresarios honestos, eficientes y solidarios
 						</h2>
 					</div>
-					<div class="cont-p-car hidden-xs">
-						<br>
-						<p>
-							jóvenes entre dieciocho y cuarenta años con empresas o proyectos de empresa
-						</p>
-					</div>
-					<%= link_to "Afiliación", afiliate_path, :class => "btn btn-afiliate" %>
 				</div>
+                <div class="container-car left-positioned">
+                    <div class="text-car">
+                      <h2>
+                        Donde todos los jóvenes tengan derecho a crecer y soñar
+                      </h2>
+                    </div>
+                    <%= link_to "Afíliate", afiliate_path, :class => "btn btn-afiliate pull-right" %>
+                </div>
 			</div>
 
 		</div>
-		<a class="left carousel-control" href="#carousel-home-generic" role="button" data-slide="prev"></a>
-		<a class="right carousel-control" href="#carousel-home-generic" role="button" data-slide="next"></a>
+		<!--<a class="left carousel-control" href="#carousel-home-generic" role="button" data-slide="prev"></a>-->
+		<!--<a class="right carousel-control" href="#carousel-home-generic" role="button" data-slide="next"></a>-->
 	</div>
 </section>
-<span class="anchor" id="quienes-somosA"></span>
+<span class="anchor" id="nosotros"></span>
 <section id="quienes-somos">
 	<div class="row margin-side">
 		<div class=" col-md-8 cl-blue cont-blue">
 			<div class="col-md-2 hidden-sm hidden-md"></div>
 			<div class="col-md-6 col-lg-5 ">
 				<div class="text-title">
-					<h1>Quienes somos</h1>
+					<h1><strong>Nosotros</strong></h1>
 				</div>
 				<div class="text-justify cont-p">
 					<p>
-						La Asociación Jóvenes Empresarios de Venezuela es una iniciativa de empresarios para nuevos prendedores, cual recoge entre sus miembros a jóvenes entre dieciocho y cuarenta años con empresas o proyectos de esa ubicados en el territorio venezolano. 	
+                      Somos un grupo Jóvenes Empresarios venezolanos entre dieciocho y cuarenta años, con empresas, proyectos y emprendimientos ubicados a lo largo y ancho de todo el territorio venezolano. Nuestro principal empleo es construir un mejor país.
 					</p>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-5">
 				<div class="text-title">
-					<h1>Pilares</h1>
+					<h1><strong>Queremos</strong></h1>
 				</div>
 				<div class="text-justify cont-p">
 					<p>
-						La Asociación Jóvenes Empresarios de Venezuela es una iniciativa de empresarios para nuevos prendedores, cual recoge entre sus miembros a jóvenes entre dieciocho y cuarenta.
+                      Potenciar los intereses de los jóvenes empresarios y apoyar la creación de nuevas empresas sumando los esfuerzos y experiencias de todos sus asociados teniendo siempre presente que la empresa privada tiene la oportunidad y la responsabilidad de mover nuestro país hacía adelante.
 					</p>
 				</div>
 			</div>
@@ -62,67 +62,127 @@
 		<div class=" col-md-4 col-lg-4 cl-black cont-black">
 			<div class="col-md-12">
 				<div class="text-title">
-					<h1>Que soñamos</h1>
+					<h1><strong>Soñar alto</strong></h1>
 				</div>
 				<div class="text-justify cont-p">
 					<p>
-						Ser la institución líder en la promoción y desarrollo del espíritu emprendedor de los jóvenes empresarios de Venezuela, proveyéndolos de conocimientos y de valiosas experiencias.
+                      Logrando que sean muchos los jóvenes que crean en la empresa privada como un camino para generar bienestar y progreso en nuestra sociedad. Jóvenes dueños empresas eficientes, honestas y solidarias que sean ejemplo y garantía de un futuro mejor.
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="aliados" class="">
-	<div class="text-center cont-aliados cl-white">
-		<h1>Nuestros Aliados</h1>
+<section id="aliados" class="cl-white">
+	<div class="text-center cont-aliados">
+		<h1><strong>Nuestros Aliados</strong></h1>
 	</div>
-	<div id="carousel-example-generic" class="carousel slide cl-white" data-ride="carousel">
-		<div class="container text-center">
-			<div class="carousel-inner car-aliados aliados-border" role="listbox">
-                <% @allies.each_slice(4).each_with_index do |slice,index| %>
-                    <div class="item <%= index==0 ? 'active' : '' %>">
-                        <div class="row">
+
+    <div class="visible-md visible-lg">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container text-center">
+                <div class="carousel-inner car-aliados" role="listbox">
+                    <% @allies.each_slice(3).each_with_index do |slice,index| %>
+                        <div class="item <%= index==0 ? 'active' : '' %>">
+                          <div class="row">
                             <% slice.each do |ally| %>
-                                <div class="col-md-3">
+                                <div class="col-md-4 col-lg-4">
                                   <a href="<%= ally.url %>">
-                                    <%= image_tag ally.image.url(:medium) %>
+                                    <%= image_tag ally.image.url(:medium), class: 'ally_image' %>
                                   </a>
                                 </div>
                             <%end%>
+                          </div>
                         </div>
+                    <% end %>
+                </div>
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right aliados-arrow-right" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="visible-sm">
+      <div id="carousel-sm" class="carousel slide" data-ride="carousel">
+        <div class="container text-center">
+          <div class="carousel-inner car-aliados" role="listbox">
+            <% @allies.each_slice(2).each_with_index do |slice,index| %>
+                <div class="item <%= index==0 ? 'active' : '' %>">
+                  <div class="row">
+                    <% slice.each do |ally| %>
+                        <div class="col-sm-6">
+                          <a href="<%= ally.url %>">
+                            <%= image_tag ally.image.url(:medium), class: 'ally_image' %>
+                          </a>
+                        </div>
+                    <%end%>
+                  </div>
+                </div>
+            <% end %>
+          </div>
+          <a class="left carousel-control" href="#carousel-sm" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-sm" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-menu-right aliados-arrow-right" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="visible-xs">
+      <div id="carousel-xs" class="carousel slide" data-ride="carousel">
+        <div class="container text-center">
+          <div class="carousel-inner car-aliados" role="listbox">
+            <% @allies.each_with_index do |ally,index| %>
+                <div class="item <%= index==0 ? 'active' : '' %>">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <a href="<%= ally.url %>">
+                        <%= image_tag ally.image.url(:medium), class: 'ally-image' %>
+                      </a>
                     </div>
-                <% end %>
-			</div>
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true">
-						
-				</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-menu-right aliados-arrow-right" aria-hidden="true">
-						
-				</span>
-			</a>
-		</div>
-	</div>
+                  </div>
+                </div>
+            <% end %>
+          </div>
+          <a class="left carousel-control" href="#carousel-xs" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-menu-left aliados-arrow-left" aria-hidden="true"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-xs" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-menu-right aliados-arrow-right" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
 </section>
+
 <section id="red-social">
 	<div class="text-center">
-		<h1>Redes Sociales</h1>
+		<h1><strong>Síguenos y entérate de nuestros eventos</strong></h1>
 		<div class="row  margin-side text-center">
-			<div class="col-sm-12 col-md-4 col-lg-4">
-				<a class="twitter-timeline" href="https://twitter.com/ajevenezuela" data-widget-id="574351896737136641">Tweets por el @ajevenezuela.</a>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
+				<a class="twitter-timeline" href="https://twitter.com/ajevenezuela" data-widget-id="574351896737136641">Tweets por  @ajevenezuela.</a>
 				<script>
 					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 				</script>
 			</div>
 			
+			<!--<div class="col-sm-12 col-md-4 col-lg-4">-->
+				<!--<%= image_tag('social-facebook.png', :class => "") %>-->
+			<!--</div>-->
 			<div class="col-sm-12 col-md-4 col-lg-4">
-				<%= image_tag('social-facebook.png', :class => "") %>
-			</div>
-			<div class="col-sm-12 col-md-4 col-lg-4">
-				<%= image_tag('social-instagram.png', :class => "") %>
+                <!-- INSTANSIVE WIDGET -->
+              <div class="feed-title">
+                <i class="fa fa-instagram fa-3x"></i> @ajevenezuela
+                <a href="https://instagram.com/ajevenezuela/" class="pull-right follow_link">Seguir</a>
+              </div>
+              <div class="instagram-feed">
+                <script src="//instansive.com/widget/js/instansive.js"></script>
+                <iframe src="//instansive.com/widgets/78e8a5d0222517275e71d4b4c720076ea235b1c2.html" id="instansive_78e8a5d022" name="instansive_78e8a5d022"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+              </div>
 			</div>
 		</div>
 	</div>

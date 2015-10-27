@@ -1,10 +1,11 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.carousel{
-    border-bottom: solid 15px #E4E4E4;
-    padding-bottom: 31px;
-}
+
+//.carousel{
+//    border-bottom: solid 15px #E4E4E4;
+//    padding-bottom: 31px;
+//}
 
 
 .carousel-control{
@@ -56,42 +57,81 @@ a.carousel-control:focus{ 	opacity: 0; }
 }
 .container-car{
 	position: absolute;
-	margin-bottom: 140px;
 }
 .container-car h1{
 	color: #666666 !important;
 }
+@media (max-width: 530px){
+  .container-car{
+    top: 15px;
+    left: 12px;
+  }
+  .left-positioned{
+    top: 30px;
+    left:auto;
+    right: 10px;
+  }
+}
 @media (min-width: 530px) and (max-width: 649px){
 	.container-car{
-		margin-top: -165px;
-		margin-left: 20px;
+      top: 50px;
+      left: 35px;
 	}
+    .left-positioned{
+      top: 75px;
+      left:auto;
+      right: 35px;
+    }
 }
 @media (min-width:650px ) {
 	.container-car{
-		margin-top: -228px;
-		margin-left: 20px;
-	}	
+      top: 85px;
+      left: 60px;
+	}
+    .left-positioned{
+      top: 95px;
+      left:auto;
+      right: 60px;
+    }
 }
 @media (min-width: 768px) {
 	.container-car{
-		margin-top: -270px;
-		margin-left: 80px;
-	}	
+      top: 160px;
+      left: 50px;
+	}
+    .left-positioned{
+      top: 180px;
+      left:auto;
+      right: 50px;
+    }
 }
 @media (min-width: 992px) {
 	.container-car{
-		margin-top: -370px;
-		margin-left: 100px;
-	}	
+      top: 175px;
+      left: 50px;
+	}
+    .left-positioned{
+        top: 195px;
+        left:auto;
+        right: 50px;
+    }
 }
 @media (min-width: 1200px) {
 	.container-car{
-		margin-top: -470px;
-		margin-left: 156px;
-	}	
+      top: 175px;
+      left: 50px;
+	}
+    .left-positioned{
+      top:195px;
+      left:auto;
+      right:50px;
+    }
 }
-
+@media (max-width: 768px) {
+  .container-car h1{
+    font-size: 28px;
+  }
+}
 @media (min-width: 768px) {
 	.container-car h1{
 		font-size: 40px;
@@ -107,17 +147,35 @@ a.carousel-control:focus{ 	opacity: 0; }
 		font-size: 60px;
 	}	
 }
+@media (max-width: 350px) {
+	.text-car{
+		width: 90px;
+		font-size: 7px;
+	}
+    .left-positioned .text-car{
+        text-align: right;
+        margin-left: 35px;
+    }
+}
 @media (min-width: 350px) {
 	.text-car{
-		width: 190px;
-		font-size: 10px;
+		width: 150px;
+		font-size: 8px;
 	}
+    .left-positioned .text-car{
+        text-align: right;
+        margin-left: 8px;
+    }
 }
 @media (min-width: 768px) {
 	.text-car{
-		width: 320px;
+		width: 250px;
 		font-size: 10px;
 	}
+    .left-positioned .text-car{
+        text-align: right;
+        margin-left: 8px;
+    }
 }
 @media (min-width: 992px) {
 	.text-car{
@@ -181,6 +239,13 @@ a.btn-afiliate{
 .btn-afiliate:hover{
 	color: white;
 }
+@media (max-width: 350px) {
+  .btn-afiliate{
+    font-size: 16px;
+    padding-top: 5px;
+    width: 130px;
+  }
+}
 @media (min-width: 350px) {
 	.btn-afiliate{
 		font-size: 16px;
@@ -205,7 +270,7 @@ a.btn-afiliate{
 }
 @media screen and (min-width: 768px){
 	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-		height: 400px !important;
+		height: 490px !important;
 	}
 }
 @media (min-width: 992px){
@@ -218,25 +283,25 @@ a.btn-afiliate{
 		height: 660px !important;
 	}
 }
-.car-image2{
-	width: 100%;
-	height: 100%;
-}
-@media (min-width: 768px) {
-	img.car-image2{
-		height: 150px;
-	}
-}
-@media (min-width: 992px) {
-	img.car-image2{
-		height: 190px;
-	}
-}
-@media (min-width: 1200px) {
-	img.car-image2{
-		height: 229px;
-	}
-}
+//.car-image2{
+//	width: 100%;
+//	height: 100%;
+//}
+//@media (min-width: 768px) {
+//	img.car-image2{
+//		height: 150px;
+//	}
+//}
+//@media (min-width: 992px) {
+//	img.car-image2{
+//		height: 190px;
+//	}
+//}
+//@media (min-width: 1200px) {
+//	img.car-image2{
+//		height: 229px;
+//	}
+//}
 .margin-side{
 	margin: 0;
 }
@@ -269,46 +334,27 @@ a.btn-afiliate{
 .cl-white{
 	background: #ffffff;
 }
-.cont-blue, .cont-black{
-	padding-bottom: 45px;
+.cont-blue,
+.cont-black{
+	padding-bottom: 10px;
 }
 @media (min-width: 768px){
-	.cont-blue{
+    .cont-blue,
+    .cont-black{
 		height: auto;
-
 	}
 }
 @media (min-width: 992px){
-	.cont-blue{
-		height: 413px;
-
+	.cont-blue,
+	.cont-black{
+		height: 320px;
 	}
-
 }
 @media (min-width: 1200px){
-	.cont-blue{
-		height: 365px;
-
-	}
-}
-@media (min-width: 768px){
-	.cont-black{
-		height: auto;
-
-	}
-}
-@media (min-width: 992px){
-	.cont-black{
-		height: 413px;
-
-	}
-
-}
-@media (min-width: 1200px){
-	.cont-black{
-		height: 365px;
-
-	}
+  .cont-blue,
+  .cont-black{
+      height: 310px;
+  }
 }
 .text-title h1{
 	font-size: 40px;
@@ -347,36 +393,29 @@ h1{
 	margin-bottom: 0;
 }
 
-@media(min-width: 768px){
-	.car-aliados{
-		height: 150px;
-	}
-}
-@media(min-width: 992px){
-	.car-aliados{
-		height: 190px;
-	}
-}
-@media(min-width: 1200px){
-	.car-aliados{
-		height: 140px;		
-	}
+.car-aliados{
+  height: 150px;
 }
 .aliados-border{
-    border-left: solid 1px rgb(171, 163, 163);
-    border-right: solid 1px rgb(171, 163, 163);
-    box-shadow: 33px 0 15px 23px rgba(129, 123, 123, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
-    box-shadow: 7px 0 4px -4px rgba(231, 231, 231, 0.8), -7px 0 4px -4px rgba(231, 231, 231, 0.8);
+  border-left: solid 1px rgb(171, 163, 163);
+  border-right: solid 1px rgb(171, 163, 163);
+  box-shadow: 33px 0 15px 23px rgba(129, 123, 123, 0.8), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+  box-shadow: 7px 0 4px -4px rgba(231, 231, 231, 0.8), -7px 0 4px -4px rgba(231, 231, 231, 0.8);
 }
-.aliados-arrow-left{
-    margin-top: 57px;
-    margin-right: 75px;
-    color: #93D2FB;
+
+a.carousel-control{
+  width: 50px;
 }
+
+.aliados-arrow-left,
 .aliados-arrow-right{
-    margin-top: 57px;
-    margin-left: 75px;
-    color: #93D2FB;
+  margin-top: 60px;
+  color: #93D2FB;
+}
+
+.ally-image{
+  height: 150px;
+  width: auto !important;
 }
 
 .anchor {
@@ -384,4 +423,44 @@ h1{
   height: 70px;
   margin-top: -70px;
   visibility: hidden;
+}
+
+#red-social,
+#aliados{
+  padding-bottom: 30px;
+}
+
+.instagram-feed{
+  max-height: 355px;
+  width: 100%;
+  background-color: white;
+  border-bottom:1px solid #E8E8E8;
+  border-left:1px solid #E8E8E8;
+  border-right:1px solid #E8E8E8;
+  overflow: auto;
+  padding:5px;
+}
+.feed-title{
+  height: 43px;
+  border: solid 1px black;
+  background-color: #47779e;
+  color: white;
+  line-height: 43px;
+  font-size: 18px;
+  text-align: left;
+  margin:0;
+
+  i{
+    margin: 0 10px 0 20px;
+    font-size: 25px!important;
+  }
+
+  .follow_link,
+  .follow_link:active,
+  .follow_link:hover,
+  .follow_link:link,
+  .follow_link:focus,{
+    margin-right: 20px;
+    color: white;
+  }
 }

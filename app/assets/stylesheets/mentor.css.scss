@@ -4,6 +4,7 @@
 }
 .mentor-box{
 	margin-bottom: 20px;
+    height: 350px;
 	overflow: hidden;
 	padding: 0px 10px
 }
@@ -52,6 +53,9 @@
 	height: 220px;
 	text-align: center;
 	display: none;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .mentorAvatar:hover .socialHover{
 	display: block;
@@ -70,13 +74,11 @@
 	box-shadow: inset 1px 30px 0px rgba(249, 249, 249, 0.51);
 }
 .see-more-mentor{
-	position: absolute;
-	right: 29%;
-	bottom: 29px;
+    font-weight: bold;
 	font-size: 14px;
 }
 .img-mentor-modal{
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .name-mentor-modal{
 	font-family:'Roboto';
