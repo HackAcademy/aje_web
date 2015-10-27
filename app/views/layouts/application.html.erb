@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aje</title>
+  <title>AJE Venezuela</title>
   	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   	<% if request.ssl? %>
     	<%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css' %>
@@ -12,20 +12,21 @@
   	<% end %>
     
     <!-- font-awesome - cdn -->
-      <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' %>
+    <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' %>
 
     <!-- Font Roboto Light - cdn -->
     <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Roboto:300' %>
     
   	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-  
+
+    <%= favicon_link_tag 'favicon-32x32.png', rel: 'icon', type: 'image/png', sizes: '32x32'%>
+    <%= favicon_link_tag 'favicon-16x16.png', rel: 'icon', type: 'image/png', sizes: '16x16'%>
+
   	<%= csrf_meta_tags %>
 </head>
 <body>
-<div>
-  <%= render "layouts/header_nav" %>
-  <%= yield %>
-  <%= render "layouts/footer" %>
-</div>
+    <%= render "layouts/header_nav" %>
+    <%= yield %>
+    <%= render "layouts/footer" %>
 </body>
 </html>

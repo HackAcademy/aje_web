@@ -1,37 +1,34 @@
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	background-color: #FDFDFF;
 }
-.navbar-collapse{
-	overflow-x:hidden;
-}
-.navbar-collapse.in{
-	overflow-y:hidden;
-}
+//.navbar-collapse{
+//	overflow-x:hidden;
+//}
+//.navbar-collapse.in{
+//	overflow-y:hidden;
+//}
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	border-color: #fff;
+}
+.navbar-default .navbar-toggle{
+  margin-top: 17px;
 }
 .navbar{
 	font-size: 16px;
 }
-.navbar-header{
-}
-.navbar{
-}
-.navbar-nav{
-}
-.navbar-nav li{
-	margin-right: -15px;
-}
+//.navbar-nav li{
+//	margin-right: -15px;
+//}
 .navbar-nav a:hover{
 	color: #64BBE8!important;
 }
-.logo-navbar{
-	float: left;
-}
-.menu-navbar{
-	float: right;
-}
-.menu-navbar > ul > li{
+//.logo-navbar{
+//	float: left;
+//}
+//.menu-navbar{
+//	float: right;
+//}
+#navbar > ul > li{
 	padding-top: 2%;
 	font-weight: bold;
 }
@@ -44,14 +41,4 @@
 	.navbar-default .navbar-nav>li>a {
 		font-size: 16px;
 	}
-}
-//.nav-t{
-//	margin-top: 0;
-//}
-//.nav-b{
-//	margin-top: 13px;
-//}
-.nav-t2{
-
-	margin-top:0 !important;
 }

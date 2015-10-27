@@ -5,10 +5,10 @@
 //= require jquery.nicescroll
 
 $(document).ready(function(){
-  $("html").niceScroll({
-      cursorwidth: '8px',
-      autohidemode: 'false'
-  });
+  //$("html").niceScroll({
+  //    cursorwidth: '8px',
+  //    autohidemode: 'false'
+  //});
   $(window).scroll(function(){
     $("body").niceScroll({
         cursorwidth: '8px',
